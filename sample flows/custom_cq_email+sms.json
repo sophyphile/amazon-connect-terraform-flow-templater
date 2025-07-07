@@ -1,0 +1,2562 @@
+{
+  "Version": "2019-10-30",
+  "StartAction": "",
+  "Metadata": {
+    "entryPointPosition": {
+      "x": -341,
+      "y": 192
+    },
+    "ActionMetadata": {
+      "e8f158f1-48e6-4e90-8d36-846986108f01": {
+        "position": {
+          "x": 1609,
+          "y": 449
+        },
+        "children": [
+          "fa323a4a-d672-4b0c-b381-c9fe9ddbf2fa"
+        ],
+        "dynamicParams": []
+      },
+      "fa323a4a-d672-4b0c-b381-c9fe9ddbf2fa": {
+        "position": {
+          "x": 1609,
+          "y": 449
+        },
+        "voiceAuthenticationUseDynamic": false,
+        "voiceAuthenticationResponseTimeUseDynamic": false,
+        "fraudDetectionUseDynamic": false,
+        "fragments": {
+          "SetContactData": "e8f158f1-48e6-4e90-8d36-846986108f01"
+        }
+      },
+      "43a791ab-166b-43cb-8d4c-836f0240b94f": {
+        "position": {
+          "x": 1272,
+          "y": -96
+        },
+        "children": [
+          "21a5ec63-1b9c-4790-a68b-2a42e9dcbe52"
+        ],
+        "dynamicParams": []
+      },
+      "21a5ec63-1b9c-4790-a68b-2a42e9dcbe52": {
+        "position": {
+          "x": 1272,
+          "y": -96
+        },
+        "voiceAuthenticationUseDynamic": false,
+        "voiceAuthenticationResponseTimeUseDynamic": false,
+        "fraudDetectionUseDynamic": false,
+        "fragments": {
+          "SetContactData": "43a791ab-166b-43cb-8d4c-836f0240b94f"
+        }
+      },
+      "amazon_q_connect": {
+        "position": {
+          "x": 1531,
+          "y": -2240
+        },
+        "isFriendlyName": true,
+        "children": [
+          "amazon_q_connect-TsZ83Wc9LL"
+        ],
+        "parameters": {
+          "WisdomAssistantArn": {
+            "displayName": "arn:aws:wisdom:eu-west-2:637796036580:assistant/3a4f1555-4c5d-4c3c-9379-f01b6ff1481d"
+          }
+        },
+        "fragments": {
+          "SetContactData": "amazon_q_connect-TsZ83Wc9LL"
+        }
+      },
+      "amazon_q_connect-TsZ83Wc9LL": {
+        "position": {
+          "x": 1531,
+          "y": -2240
+        },
+        "isFriendlyName": true,
+        "dynamicParams": []
+      },
+      "4a26b33a-d65a-481d-aa22-109e61cde10b": {
+        "position": {
+          "x": 3638,
+          "y": -137
+        }
+      },
+      "dab630e4-cb1d-4347-9ca2-81ffe405b49d": {
+        "position": {
+          "x": 3638,
+          "y": 143
+        }
+      },
+      "c44ac841-77da-47d3-9e71-f51ba74bb6f4": {
+        "position": {
+          "x": 2669,
+          "y": 582
+        }
+      },
+      "89f6bb32-8e37-413a-8fe1-5921cf904529": {
+        "position": {
+          "x": 3082,
+          "y": 597
+        },
+        "parameters": {},
+        "useDynamic": {},
+        "customerProfilesAction": "CreateCustomerProfile"
+      },
+      "74f2ec54-050d-4931-baf7-cd57dfb607ea": {
+        "position": {
+          "x": 3072,
+          "y": 266
+        },
+        "parameters": {
+          "ProfileRequestData": {
+            "IdentifierName": {
+              "displayName": "Email"
+            }
+          }
+        },
+        "useDynamic": {
+          "IdentifierName": true
+        },
+        "customerProfilesAction": "GetCustomerProfile"
+      },
+      "5e050d1d-e42a-4547-ac7f-215895270beb": {
+        "position": {
+          "x": 3069,
+          "y": -40
+        }
+      },
+      "7be49043-7625-418d-923c-a43845bd0ce7": {
+        "position": {
+          "x": 3061,
+          "y": -328
+        },
+        "parameters": {
+          "ProfileRequestData": {
+            "IdentifierName": {
+              "useDynamic": true
+            },
+            "ObjectType": {
+              "displayName": "Salesforce Account"
+            }
+          }
+        }
+      },
+      "f45be090-5551-4b79-a897-9aa97326ff27": {
+        "position": {
+          "x": 3054,
+          "y": -574
+        }
+      },
+      "548d13d7-223c-4cd9-9e93-07cbb927a6da": {
+        "position": {
+          "x": 3078,
+          "y": 840
+        },
+        "parameters": {},
+        "useDynamic": {},
+        "customerProfilesAction": "UpdateCustomerProfile"
+      },
+      "8cbc776e-fe6a-43d9-94d3-7b9ee3202a07": {
+        "position": {
+          "x": 3077,
+          "y": 1092
+        },
+        "parameters": {
+          "ProfileRequestData": {
+            "SegmentName": {
+              "displayName": "segment123"
+            }
+          }
+        }
+      },
+      "f334cb19-bc19-4019-86e9-43711a3a0d7e": {
+        "position": {
+          "x": 3056,
+          "y": -1437
+        },
+        "action": "getCaseAction",
+        "requestFieldsOptions": {},
+        "responseFieldsOptions": {}
+      },
+      "735ec313-d082-4b03-b81e-5601f401121d": {
+        "position": {
+          "x": 3049,
+          "y": -2015
+        },
+        "parameters": {
+          "CaseTemplateId": {
+            "displayName": "case-template123"
+          },
+          "CaseRequestFields": {
+            "status": {
+              "displayName": "Closed"
+            }
+          }
+        },
+        "action": "createCaseAction",
+        "templateName": "case-template123",
+        "requestFieldsOptions": {
+          "status": "Closed"
+        },
+        "requiredFieldsOptions": []
+      },
+      "b8a92a5f-256e-4f0d-9fc4-5bf94ae81708": {
+        "position": {
+          "x": 3053,
+          "y": -1725
+        },
+        "parameters": {
+          "caseId": {
+            "useDynamic": true
+          }
+        },
+        "action": "updateCaseAction",
+        "requestFieldsOptions": {}
+      },
+      "d2f7891e-36d3-4306-a27e-8f634e9c5abf": {
+        "position": {
+          "x": 827,
+          "y": 508
+        }
+      },
+      "33c386e6-bab3-48b3-aaca-fded023e2744": {
+        "position": {
+          "x": 1549,
+          "y": -1969
+        }
+      },
+      "32624be8-778e-4a9d-85f8-737b47f9b482": {
+        "position": {
+          "x": 1563,
+          "y": -1700
+        }
+      },
+      "04b7a321-bb90-48d3-9bae-a486a568376f": {
+        "position": {
+          "x": 1570,
+          "y": -1474
+        }
+      },
+      "787f8110-2cfe-4a77-9459-575651c1f06f": {
+        "position": {
+          "x": 1578,
+          "y": -1157
+        },
+        "dynamicParams": []
+      },
+      "a2dde0c5-f43d-4c0c-9ed1-ca994b59b930": {
+        "position": {
+          "x": 1587,
+          "y": -896
+        },
+        "parameters": {
+          "EventHooks": {
+            "CustomerRemaining": {
+              "displayName": "Sample AB test"
+            }
+          }
+        },
+        "contactFlow": {
+          "text": "Sample AB test",
+          "id": "arn:aws:connect:eu-west-2:637796036580:instance/311bc0e2-a159-46e3-a12d-19216cb26568/contact-flow/a19dd5bc-3575-43ea-91a2-c44d148f36be"
+        }
+      },
+      "42bc4ae8-ff17-49cc-8830-1c6e55b3aef5": {
+        "position": {
+          "x": 1597,
+          "y": -621
+        },
+        "parameters": {
+          "EventHooks": {
+            "DisconnectAgentUI": {
+              "displayName": "Sample disconnect flow"
+            }
+          }
+        }
+      },
+      "6d66842c-f239-4e79-a96b-2e8bdbbf1042": {
+        "position": {
+          "x": 1250,
+          "y": -613
+        },
+        "parameters": {
+          "EventHooks": {
+            "PauseContact": {
+              "displayName": "Sample recording behavior"
+            }
+          }
+        }
+      },
+      "06e8294b-4431-4dc5-b38e-29e8b97f7dbe": {
+        "position": {
+          "x": 865,
+          "y": -604
+        },
+        "parameters": {
+          "EventHooks": {
+            "ResumeContact": {
+              "displayName": "Sample inbound flow (first contact experience)"
+            }
+          }
+        }
+      },
+      "c6c86aca-bed2-4fe0-bf51-ff87d85023e4": {
+        "position": {
+          "x": 551,
+          "y": -599
+        },
+        "parameters": {
+          "EventHooks": {
+            "DefaultAgentUI": {
+              "displayName": "Sample Lambda integration"
+            }
+          }
+        }
+      },
+      "338b6c7c-9932-4f98-9fc6-d1c7003e6f53": {
+        "position": {
+          "x": 1185,
+          "y": -360
+        },
+        "parameters": {
+          "EventHooks": {
+            "AgentHold": {
+              "displayName": "Default agent hold"
+            }
+          }
+        },
+        "contactFlow": {
+          "text": "Default agent hold",
+          "id": "arn:aws:connect:eu-west-2:637796036580:instance/311bc0e2-a159-46e3-a12d-19216cb26568/contact-flow/c12e524e-ae28-492b-a450-17a4e8efc277"
+        },
+        "customerOrAgent": false
+      },
+      "460e3dc4-9cb5-433f-80b7-321d2a666274": {
+        "position": {
+          "x": 1596,
+          "y": -367
+        },
+        "parameters": {
+          "EventHooks": {
+            "CustomerHold": {
+              "displayName": "Default customer hold"
+            }
+          }
+        },
+        "contactFlow": {
+          "text": "Default customer hold",
+          "id": "arn:aws:connect:eu-west-2:637796036580:instance/311bc0e2-a159-46e3-a12d-19216cb26568/contact-flow/4c06c1d6-a920-4a58-b8df-543be488db6d"
+        },
+        "customerOrAgent": true
+      },
+      "d71c460f-24f4-434b-8df9-6014cf0d57ec": {
+        "position": {
+          "x": 137,
+          "y": -83
+        },
+        "parameters": {
+          "ContactFlowId": {
+            "displayName": "Sample queue configurations flow"
+          }
+        },
+        "ContactFlow": {
+          "text": "Sample queue configurations flow"
+        }
+      },
+      "eecca714-8e64-41c4-aa78-d865af95b60a": {
+        "position": {
+          "x": 541,
+          "y": -84
+        }
+      },
+      "481bb604-6750-4134-9572-c269d11656dd": {
+        "position": {
+          "x": 2330,
+          "y": 329
+        },
+        "toCustomer": true,
+        "fromCustomer": true
+      },
+      "15669d0d-36be-4395-a54a-9d7117077549": {
+        "position": {
+          "x": 2337,
+          "y": 588
+        }
+      },
+      "4a1d9067-a7c8-4070-a6d3-1fbdf08b924a": {
+        "position": {
+          "x": 2330,
+          "y": 124
+        }
+      },
+      "26f4aa85-06f7-4146-8508-46f6f9bdf378": {
+        "position": {
+          "x": 2323,
+          "y": -72
+        }
+      },
+      "7c621686-7e35-4b39-a685-29fcb782047e": {
+        "position": {
+          "x": 2662,
+          "y": 62
+        },
+        "conditions": [],
+        "conditionMetadata": []
+      },
+      "36be16d1-8832-462e-ace7-357ed5dde418": {
+        "position": {
+          "x": 2658,
+          "y": 315
+        }
+      },
+      "0840b4b4-d494-4479-bdcb-f54fe249f825": {
+        "position": {
+          "x": 3646,
+          "y": 411
+        },
+        "parameters": {
+          "ThirdPartyPhoneNumber": {
+            "countryCode": "GB"
+          },
+          "CallerId": {
+            "Number": {
+              "displayName": "+442046232327",
+              "inputOption": "claimed"
+            }
+          }
+        },
+        "CountryCode": "gb",
+        "callerIdSource": "claimed"
+      },
+      "transfer to queue - set working queue": {
+        "position": {
+          "x": 3645,
+          "y": 841
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "QueueId": {
+            "displayName": "BasicQueue"
+          }
+        },
+        "queue": {
+          "id": "arn:aws:connect:eu-west-2:637796036580:instance/311bc0e2-a159-46e3-a12d-19216cb26568/queue/9d1e923f-14a9-405a-84ce-8673151322a0",
+          "text": "BasicQueue"
+        }
+      },
+      "transfer to queue - set agent queue": {
+        "position": {
+          "x": 3893,
+          "y": 844
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "AgentId": {
+            "displayName": "sansari (Sami Ansari)"
+          }
+        },
+        "queue": {
+          "id": "arn:aws:connect:eu-west-2:637796036580:instance/311bc0e2-a159-46e3-a12d-19216cb26568/agent/d1705c20-4ff5-402c-9950-beb6ae1cf019",
+          "text": "sansari (Sami Ansari)"
+        }
+      },
+      "transfer to callback - set queue": {
+        "position": {
+          "x": 4149,
+          "y": 842
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "QueueId": {
+            "displayName": "BasicQueue"
+          }
+        },
+        "queue": {
+          "id": "arn:aws:connect:eu-west-2:637796036580:instance/311bc0e2-a159-46e3-a12d-19216cb26568/queue/9d1e923f-14a9-405a-84ce-8673151322a0",
+          "text": "BasicQueue"
+        }
+      },
+      "transfer to callback - set agent queue": {
+        "position": {
+          "x": 4412,
+          "y": 841
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "AgentId": {
+            "displayName": "sansari (Sami Ansari)"
+          }
+        },
+        "queue": {
+          "id": "arn:aws:connect:eu-west-2:637796036580:instance/311bc0e2-a159-46e3-a12d-19216cb26568/agent/d1705c20-4ff5-402c-9950-beb6ae1cf019",
+          "text": "sansari (Sami Ansari)"
+        }
+      },
+      "transfer to callback - set creation flow": {
+        "position": {
+          "x": 4694,
+          "y": 842
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "AgentId": {
+            "displayName": "sansari (Sami Ansari)"
+          },
+          "ContactFlowId": {
+            "displayName": "Sample AB test"
+          }
+        },
+        "queue": {
+          "id": "arn:aws:connect:eu-west-2:637796036580:instance/311bc0e2-a159-46e3-a12d-19216cb26568/agent/d1705c20-4ff5-402c-9950-beb6ae1cf019",
+          "text": "sansari (Sami Ansari)"
+        }
+      },
+      "0040143e-9400-46bd-8ac6-da60ef5dcf02": {
+        "position": {
+          "x": 163,
+          "y": 701
+        },
+        "parameters": {
+          "PromptId": {
+            "displayName": "Music_Pop_ThrowYourselfInFrontOfIt_Inst.wav"
+          }
+        },
+        "promptName": "Music_Pop_ThrowYourselfInFrontOfIt_Inst.wav"
+      },
+      "1a02b685-9145-49de-aaac-c92701d0b4b2": {
+        "position": {
+          "x": 141,
+          "y": 488
+        },
+        "parameters": {
+          "Messages": [
+            {
+              "PromptId": {
+                "displayName": "CustomerQueue.wav"
+              }
+            }
+          ]
+        },
+        "audio": [
+          {
+            "id": "arn:aws:connect:eu-west-2:637796036580:instance/311bc0e2-a159-46e3-a12d-19216cb26568/prompt/e060cf7a-2355-47ce-974a-8f8b58788068",
+            "text": "CustomerQueue.wav",
+            "type": "Prompt"
+          }
+        ]
+      },
+      "get-queue-metrics-queue": {
+        "position": {
+          "x": 1983,
+          "y": 598
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "QueueId": {
+            "displayName": "BasicQueue"
+          }
+        },
+        "queue": {
+          "id": "arn:aws:connect:eu-west-2:637796036580:instance/311bc0e2-a159-46e3-a12d-19216cb26568/queue/9d1e923f-14a9-405a-84ce-8673151322a0",
+          "text": "BasicQueue"
+        }
+      },
+      "get-queue-metrics-agent-queue": {
+        "position": {
+          "x": 2021,
+          "y": 828
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "AgentId": {
+            "displayName": "sansari (Sami Ansari)"
+          }
+        },
+        "queue": {
+          "id": "arn:aws:connect:eu-west-2:637796036580:instance/311bc0e2-a159-46e3-a12d-19216cb26568/agent/d1705c20-4ff5-402c-9950-beb6ae1cf019",
+          "text": "sansari (Sami Ansari)"
+        }
+      },
+      "check-voice-id": {
+        "position": {
+          "x": 1986,
+          "y": 252
+        },
+        "isFriendlyName": true
+      },
+      "check_contact_attributes": {
+        "position": {
+          "x": 1962,
+          "y": -905
+        },
+        "isFriendlyName": true,
+        "conditions": [],
+        "conditionMetadata": [
+          {
+            "id": "814840b9-45c6-4be7-9d77-6c66448265cc",
+            "operator": {
+              "name": "Starts with",
+              "value": "StartsWith",
+              "shortDisplay": "starts with"
+            },
+            "value": "2"
+          }
+        ]
+      },
+      "check_call_progress": {
+        "position": {
+          "x": 1957,
+          "y": -1312
+        },
+        "isFriendlyName": true
+      },
+      "check-hours-of-operation": {
+        "position": {
+          "x": 1969,
+          "y": -655
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "HoursOfOperationId": {
+            "displayName": "Basic Hours"
+          }
+        },
+        "Hours": {
+          "id": "arn:aws:connect:eu-west-2:637796036580:instance/311bc0e2-a159-46e3-a12d-19216cb26568/operating-hours/5a76bb5f-43ca-4ef4-ae29-02050dcf5770",
+          "text": "Basic Hours"
+        }
+      },
+      "check-queue-status-queue": {
+        "position": {
+          "x": 1967,
+          "y": -339
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "QueueId": {
+            "displayName": "BasicQueue"
+          }
+        },
+        "queue": {
+          "text": "BasicQueue",
+          "id": "arn:aws:connect:eu-west-2:637796036580:instance/311bc0e2-a159-46e3-a12d-19216cb26568/queue/9d1e923f-14a9-405a-84ce-8673151322a0"
+        },
+        "conditionMetadata": []
+      },
+      "check-queue-status-agent-queue": {
+        "position": {
+          "x": 2224,
+          "y": -342
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "AgentId": {
+            "displayName": "sansari (Sami Ansari)"
+          }
+        },
+        "queue": {
+          "text": "sansari (Sami Ansari)",
+          "id": "arn:aws:connect:eu-west-2:637796036580:instance/311bc0e2-a159-46e3-a12d-19216cb26568/agent/d1705c20-4ff5-402c-9950-beb6ae1cf019"
+        },
+        "conditionMetadata": []
+      },
+      "3b3ea2a3-8479-44d0-9238-6ff70824a0fd": {
+        "position": {
+          "x": 1597,
+          "y": -84
+        },
+        "parameters": {
+          "RoutingCriteria": {
+            "Steps": [
+              {
+                "Expiry": {
+                  "DurationInSeconds": {
+                    "unit": 1
+                  }
+                }
+              }
+            ]
+          }
+        }
+      },
+      "f8bf7137-e7e7-40fd-a03f-38a03096c1fd": {
+        "position": {
+          "x": 1603,
+          "y": 183
+        },
+        "parameters": {
+          "TextToSpeechVoice": {
+            "languageCode": "en-US"
+          }
+        },
+        "overrideConsoleVoice": false
+      },
+      "check-staffing-agent-queue": {
+        "position": {
+          "x": 2084,
+          "y": -66
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "AgentId": {
+            "displayName": "sansari (Sami Ansari)"
+          }
+        },
+        "queue": {
+          "text": "sansari (Sami Ansari)",
+          "id": "arn:aws:connect:eu-west-2:637796036580:instance/311bc0e2-a159-46e3-a12d-19216cb26568/agent/d1705c20-4ff5-402c-9950-beb6ae1cf019"
+        }
+      },
+      "check-staffing-queue": {
+        "position": {
+          "x": 1845,
+          "y": -71
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "QueueId": {
+            "displayName": "BasicQueue"
+          }
+        },
+        "queue": {
+          "text": "BasicQueue",
+          "id": "arn:aws:connect:eu-west-2:637796036580:instance/311bc0e2-a159-46e3-a12d-19216cb26568/queue/9d1e923f-14a9-405a-84ce-8673151322a0"
+        }
+      },
+      "change_routing_prio": {
+        "position": {
+          "x": 1624,
+          "y": 994
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "QueueTimeAdjustmentSeconds": {
+            "unit": 1
+          }
+        },
+        "adjustUnit": "seconds"
+      },
+      "set-whisper-flow-agent": {
+        "position": {
+          "x": 1612,
+          "y": 719
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "EventHooks": {
+            "AgentWhisper": {
+              "displayName": "Default agent whisper"
+            }
+          }
+        },
+        "contactFlow": {
+          "text": "Default agent whisper",
+          "id": "arn:aws:connect:eu-west-2:637796036580:instance/311bc0e2-a159-46e3-a12d-19216cb26568/contact-flow/1e50fee0-f311-4520-b672-644b6ebd649d"
+        },
+        "customerOrAgent": false
+      },
+      "set-whisper-flow-customer": {
+        "position": {
+          "x": 1354,
+          "y": 726
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "EventHooks": {
+            "CustomerWhisper": {
+              "displayName": "Default customer whisper"
+            }
+          }
+        },
+        "contactFlow": {
+          "text": "Default customer whisper",
+          "id": "arn:aws:connect:eu-west-2:637796036580:instance/311bc0e2-a159-46e3-a12d-19216cb26568/contact-flow/f207d159-36e1-4399-898e-62fcf54354fb"
+        },
+        "customerOrAgent": true
+      },
+      "storecustomerinput-promptlib": {
+        "position": {
+          "x": 155,
+          "y": 1246
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "PromptId": {
+            "displayName": "Beep.wav"
+          }
+        },
+        "promptName": "Beep.wav",
+        "conditionMetadata": [],
+        "countryCodePrefix": "+1"
+      },
+      "storecustomerinput-keyid": {
+        "position": {
+          "x": 412,
+          "y": 1250
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "PromptId": {
+            "displayName": "Music_Pop_ThisAndThatIsLife_Inst.wav"
+          }
+        },
+        "promptName": "Music_Pop_ThisAndThatIsLife_Inst.wav",
+        "conditionMetadata": [],
+        "countryCodePrefix": "+1"
+      },
+      "storecustomerinput-s3": {
+        "position": {
+          "x": -108,
+          "y": 1248
+        },
+        "isFriendlyName": true,
+        "conditionMetadata": [],
+        "countryCodePrefix": "+1"
+      },
+      "73b0efd8-f2ac-4fc0-9cf5-70bd4a088843": {
+        "position": {
+          "x": 143,
+          "y": 183
+        },
+        "conditionMetadata": []
+      },
+      "5a2de58b-8180-4ef8-823b-1703ff360584": {
+        "position": {
+          "x": -145,
+          "y": 186
+        },
+        "conditionMetadata": []
+      },
+      "e9065ba1-d120-42d1-a80c-e5bd7a979032": {
+        "position": {
+          "x": -93,
+          "y": 701
+        }
+      },
+      "5d0faabb-248a-4afa-bcfd-375f24db4320": {
+        "position": {
+          "x": 3037,
+          "y": 1483
+        },
+        "parameters": {
+          "LambdaFunctionARN": {
+            "displayName": "sample-connect-function"
+          }
+        },
+        "dynamicMetadata": {}
+      },
+      "send_message_sms": {
+        "position": {
+          "x": 415,
+          "y": 943
+        },
+        "isFriendlyName": true,
+        "children": [
+          "send_message_sms-pGnD0FpyVp"
+        ],
+        "parameters": {
+          "WisdomMessageTemplateArn": {
+            "displayName": "my_sms_template"
+          }
+        }
+      },
+      "send_message_sms-pGnD0FpyVp": {
+        "position": {
+          "x": 415,
+          "y": 943
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "SourceEndpoint": {
+            "Address": {
+              "useDynamic": true
+            }
+          },
+          "ContactFlowArn": {
+            "displayName": "Sample Lambda integration"
+          }
+        }
+      },
+      "send_message_email": {
+        "position": {
+          "x": 151,
+          "y": 945
+        },
+        "isFriendlyName": true,
+        "children": [
+          "send_message_email-AQ7HJVyinh",
+          "send_message_email-YqXDnbi6Xx"
+        ],
+        "parameters": {
+          "WisdomMessageTemplateArn": {
+            "displayName": "my_template"
+          }
+        }
+      },
+      "send_message_email-AQ7HJVyinh": {
+        "position": {
+          "x": 151,
+          "y": 945
+        },
+        "isFriendlyName": true
+      },
+      "send_message_email-YqXDnbi6Xx": {
+        "position": {
+          "x": 151,
+          "y": 945
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "FromEmailAddress": {
+            "EmailAddress": {
+              "displayName": "Info<info@contactflow-templater.email.connect.aws>"
+            }
+          }
+        }
+      }
+    },
+    "Annotations": [],
+    "name": "custom_cq",
+    "description": "",
+    "type": "customerQueue",
+    "status": "SAVED",
+    "hash": {}
+  },
+  "Actions": [
+    {
+      "Parameters": {
+        "IsVoiceIdStreamingEnabled": "false",
+        "IsFraudDetectionEnabled": "true",
+        "IsVoiceAuthenticationEnabled": "true",
+        "VoiceAuthenticationThreshold": "90",
+        "VoiceAuthenticationResponseTime": "10",
+        "FraudDetectionThreshold": "50"
+      },
+      "Identifier": "e8f158f1-48e6-4e90-8d36-846986108f01",
+      "Type": "UpdateContactData",
+      "Transitions": {
+        "NextAction": "fa323a4a-d672-4b0c-b381-c9fe9ddbf2fa",
+        "Errors": [
+          {
+            "NextAction": "",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {},
+      "Identifier": "fa323a4a-d672-4b0c-b381-c9fe9ddbf2fa",
+      "Type": "StartVoiceIdStream",
+      "Transitions": {
+        "NextAction": "",
+        "Errors": [
+          {
+            "NextAction": "",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "IsVoiceIdStreamingEnabled": "true",
+        "IsFraudDetectionEnabled": "true",
+        "IsVoiceAuthenticationEnabled": "true",
+        "VoiceAuthenticationThreshold": "91",
+        "VoiceAuthenticationResponseTime": "10",
+        "FraudDetectionThreshold": "51"
+      },
+      "Identifier": "43a791ab-166b-43cb-8d4c-836f0240b94f",
+      "Type": "UpdateContactData",
+      "Transitions": {
+        "NextAction": "21a5ec63-1b9c-4790-a68b-2a42e9dcbe52",
+        "Errors": [
+          {
+            "NextAction": "",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {},
+      "Identifier": "21a5ec63-1b9c-4790-a68b-2a42e9dcbe52",
+      "Type": "StartVoiceIdStream",
+      "Transitions": {
+        "NextAction": "",
+        "Errors": [
+          {
+            "NextAction": "",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "WisdomAssistantArn": "arn:aws:wisdom:eu-west-2:637796036580:assistant/3a4f1555-4c5d-4c3c-9379-f01b6ff1481d"
+      },
+      "Identifier": "amazon_q_connect",
+      "Type": "CreateWisdomSession",
+      "Transitions": {
+        "NextAction": "amazon_q_connect-TsZ83Wc9LL",
+        "Errors": [
+          {
+            "NextAction": "",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "WisdomSessionArn": "$.Wisdom.SessionArn"
+      },
+      "Identifier": "amazon_q_connect-TsZ83Wc9LL",
+      "Type": "UpdateContactData",
+      "Transitions": {
+        "NextAction": "",
+        "Errors": [
+          {
+            "NextAction": "",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {},
+      "Identifier": "4a26b33a-d65a-481d-aa22-109e61cde10b",
+      "Type": "EndFlowExecution",
+      "Transitions": {}
+    },
+    {
+      "Parameters": {},
+      "Identifier": "dab630e4-cb1d-4347-9ca2-81ffe405b49d",
+      "Type": "DisconnectParticipant",
+      "Transitions": {}
+    },
+    {
+      "Parameters": {},
+      "Identifier": "c44ac841-77da-47d3-9e71-f51ba74bb6f4",
+      "Type": "Wait",
+      "Transitions": {
+        "NextAction": "",
+        "Conditions": [
+          {
+            "NextAction": "",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "WaitCompleted"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "ProfileRequestData": {
+          "Attributes": {
+            "hi": "AttributeValue123-CreateProfile"
+          }
+        },
+        "ProfileResponseData": []
+      },
+      "Identifier": "89f6bb32-8e37-413a-8fe1-5921cf904529",
+      "Type": "CreateCustomerProfile",
+      "Transitions": {
+        "NextAction": "",
+        "Errors": [
+          {
+            "NextAction": "",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "ProfileRequestData": {
+          "IdentifierName": "_email",
+          "IdentifierValue": "IdentifierValue123-GetProfile"
+        },
+        "ProfileResponseData": []
+      },
+      "Identifier": "74f2ec54-050d-4931-baf7-cd57dfb607ea",
+      "Type": "GetCustomerProfile",
+      "Transitions": {
+        "NextAction": "",
+        "Errors": [
+          {
+            "NextAction": "",
+            "ErrorType": "NoMatchingError"
+          },
+          {
+            "NextAction": "$end",
+            "ErrorType": "MultipleFoundError"
+          },
+          {
+            "NextAction": "",
+            "ErrorType": "NoneFoundError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "ProfileRequestData": {
+          "ProfileId": "ProfileId123-GetCalculatedAttributes"
+        },
+        "ProfileResponseData": [
+          "CalculatedAttributes._most_frequent_channel"
+        ]
+      },
+      "Identifier": "5e050d1d-e42a-4547-ac7f-215895270beb",
+      "Type": "GetCalculatedAttributesForCustomerProfile",
+      "Transitions": {
+        "NextAction": "",
+        "Errors": [
+          {
+            "NextAction": "",
+            "ErrorType": "NoMatchingError"
+          },
+          {
+            "NextAction": "",
+            "ErrorType": "NoneFoundError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "ProfileRequestData": {
+          "IdentifierName": "$.CallbackNumber",
+          "IdentifierValue": "IdentifierValue123-GetProfileObject",
+          "ProfileId": "profileId-GetProfileObject123",
+          "ObjectType": "Salesforce-Account"
+        },
+        "ProfileResponseData": []
+      },
+      "Identifier": "7be49043-7625-418d-923c-a43845bd0ce7",
+      "Type": "GetCustomerProfileObject",
+      "Transitions": {
+        "NextAction": "",
+        "Errors": [
+          {
+            "NextAction": "",
+            "ErrorType": "NoMatchingError"
+          },
+          {
+            "NextAction": "$end",
+            "ErrorType": "NoneFoundError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "ProfileRequestData": {
+          "ProfileId": "profileId123",
+          "ContactId": "contactId123"
+        }
+      },
+      "Identifier": "f45be090-5551-4b79-a897-9aa97326ff27",
+      "Type": "AssociateContactToCustomerProfile",
+      "Transitions": {
+        "NextAction": "",
+        "Errors": [
+          {
+            "NextAction": "$end",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "ProfileRequestData": {
+          "Attributes": {
+            "hi": "AttributeValue123-UpdateProfile"
+          }
+        },
+        "ProfileResponseData": []
+      },
+      "Identifier": "548d13d7-223c-4cd9-9e93-07cbb927a6da",
+      "Type": "UpdateCustomerProfile",
+      "Transitions": {
+        "NextAction": "",
+        "Errors": [
+          {
+            "NextAction": "",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "ProfileRequestData": {
+          "ProfileId": "12312312312312312312312312312312",
+          "SegmentName": "segment123"
+        }
+      },
+      "Identifier": "8cbc776e-fe6a-43d9-94d3-7b9ee3202a07",
+      "Type": "CheckSegmentMembershipForCustomerProfile",
+      "Transitions": {
+        "NextAction": "",
+        "Conditions": [
+          {
+            "NextAction": "",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "True"
+              ]
+            }
+          },
+          {
+            "NextAction": "",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "False"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "LinkContactToCase": "true",
+        "GetLastUpdatedCase": "false"
+      },
+      "Identifier": "f334cb19-bc19-4019-86e9-43711a3a0d7e",
+      "Type": "GetCase",
+      "Transitions": {
+        "NextAction": "",
+        "Errors": [
+          {
+            "NextAction": "",
+            "ErrorType": "ContactNotLinked"
+          },
+          {
+            "NextAction": "",
+            "ErrorType": "MultipleFound"
+          },
+          {
+            "NextAction": "",
+            "ErrorType": "NoneFound"
+          },
+          {
+            "NextAction": "",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "LinkContactToCase": "true",
+        "CaseTemplateId": "bc27125f-5130-4cad-b4b1-2d0e0958ecef",
+        "CaseRequestFields": {
+          "customer_id": "customer123-CreateCase",
+          "status": "closed",
+          "title": "title123-CreateCase"
+        }
+      },
+      "Identifier": "735ec313-d082-4b03-b81e-5601f401121d",
+      "Type": "CreateCase",
+      "Transitions": {
+        "NextAction": "",
+        "Errors": [
+          {
+            "NextAction": "",
+            "ErrorType": "ContactNotLinked"
+          },
+          {
+            "NextAction": "",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "LinkContactToCase": "true",
+        "CaseId": "$.Case.case_id"
+      },
+      "Identifier": "b8a92a5f-256e-4f0d-9fc4-5bf94ae81708",
+      "Type": "UpdateCase",
+      "Transitions": {
+        "NextAction": "",
+        "Errors": [
+          {
+            "NextAction": "",
+            "ErrorType": "ContactNotLinked"
+          },
+          {
+            "NextAction": "",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "SourceContactId": "$.FlowAttributes.flow-var-create-persistent-123",
+        "RehydrationType": "From Segment"
+      },
+      "Identifier": "d2f7891e-36d3-4306-a27e-8f634e9c5abf",
+      "Type": "CreatePersistentContactAssociation",
+      "Transitions": {
+        "NextAction": "",
+        "Errors": [
+          {
+            "NextAction": "",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Tags": {}
+      },
+      "Identifier": "33c386e6-bab3-48b3-aaca-fded023e2744",
+      "Type": "TagContact",
+      "Transitions": {
+        "NextAction": "",
+        "Errors": [
+          {
+            "NextAction": "",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {},
+      "Identifier": "32624be8-778e-4a9d-85f8-737b47f9b482",
+      "Type": "ResumeContact",
+      "Transitions": {
+        "NextAction": "",
+        "Errors": [
+          {
+            "NextAction": "",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {},
+      "Identifier": "04b7a321-bb90-48d3-9bae-a486a568376f",
+      "Type": "UpdateContactCallbackNumber",
+      "Transitions": {
+        "NextAction": "",
+        "Errors": [
+          {
+            "NextAction": "",
+            "ErrorType": "InvalidCallbackNumber"
+          },
+          {
+            "NextAction": "",
+            "ErrorType": "CallbackNumberNotDialable"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Attributes": {},
+        "TargetContact": "Current"
+      },
+      "Identifier": "787f8110-2cfe-4a77-9459-575651c1f06f",
+      "Type": "UpdateContactAttributes",
+      "Transitions": {
+        "NextAction": "",
+        "Errors": [
+          {
+            "NextAction": "",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "EventHooks": {
+          "CustomerRemaining": "arn:aws:connect:eu-west-2:637796036580:instance/311bc0e2-a159-46e3-a12d-19216cb26568/contact-flow/a19dd5bc-3575-43ea-91a2-c44d148f36be"
+        }
+      },
+      "Identifier": "a2dde0c5-f43d-4c0c-9ed1-ca994b59b930",
+      "Type": "UpdateContactEventHooks",
+      "Transitions": {
+        "NextAction": "",
+        "Errors": [
+          {
+            "NextAction": "",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "EventHooks": {
+          "DisconnectAgentUI": "arn:aws:connect:eu-west-2:637796036580:instance/311bc0e2-a159-46e3-a12d-19216cb26568/contact-flow/8e22704d-8418-452a-89b6-9fe78fc48521"
+        }
+      },
+      "Identifier": "42bc4ae8-ff17-49cc-8830-1c6e55b3aef5",
+      "Type": "UpdateContactEventHooks",
+      "Transitions": {
+        "NextAction": "",
+        "Errors": [
+          {
+            "NextAction": "",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "EventHooks": {
+          "PauseContact": "arn:aws:connect:eu-west-2:637796036580:instance/311bc0e2-a159-46e3-a12d-19216cb26568/contact-flow/04ae8f54-b52c-4c04-acdb-13c5d8341a14"
+        }
+      },
+      "Identifier": "6d66842c-f239-4e79-a96b-2e8bdbbf1042",
+      "Type": "UpdateContactEventHooks",
+      "Transitions": {
+        "NextAction": "",
+        "Errors": [
+          {
+            "NextAction": "",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "EventHooks": {
+          "ResumeContact": "arn:aws:connect:eu-west-2:637796036580:instance/311bc0e2-a159-46e3-a12d-19216cb26568/contact-flow/a7b36abb-a134-4591-aa81-22c9c8d0b1fd"
+        }
+      },
+      "Identifier": "06e8294b-4431-4dc5-b38e-29e8b97f7dbe",
+      "Type": "UpdateContactEventHooks",
+      "Transitions": {
+        "NextAction": "",
+        "Errors": [
+          {
+            "NextAction": "",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "EventHooks": {
+          "DefaultAgentUI": "arn:aws:connect:eu-west-2:637796036580:instance/311bc0e2-a159-46e3-a12d-19216cb26568/contact-flow/dc0ff628-5f85-4780-b3d0-984c36c924f7"
+        }
+      },
+      "Identifier": "c6c86aca-bed2-4fe0-bf51-ff87d85023e4",
+      "Type": "UpdateContactEventHooks",
+      "Transitions": {
+        "NextAction": "",
+        "Errors": [
+          {
+            "NextAction": "",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "EventHooks": {
+          "AgentHold": "arn:aws:connect:eu-west-2:637796036580:instance/311bc0e2-a159-46e3-a12d-19216cb26568/contact-flow/c12e524e-ae28-492b-a450-17a4e8efc277"
+        }
+      },
+      "Identifier": "338b6c7c-9932-4f98-9fc6-d1c7003e6f53",
+      "Type": "UpdateContactEventHooks",
+      "Transitions": {
+        "NextAction": "",
+        "Errors": [
+          {
+            "NextAction": "",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "EventHooks": {
+          "CustomerHold": "arn:aws:connect:eu-west-2:637796036580:instance/311bc0e2-a159-46e3-a12d-19216cb26568/contact-flow/4c06c1d6-a920-4a58-b8df-543be488db6d"
+        }
+      },
+      "Identifier": "460e3dc4-9cb5-433f-80b7-321d2a666274",
+      "Type": "UpdateContactEventHooks",
+      "Transitions": {
+        "NextAction": "",
+        "Errors": [
+          {
+            "NextAction": "",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Name": "create-task-direct-flow",
+        "ContactFlowId": "arn:aws:connect:eu-west-2:637796036580:instance/311bc0e2-a159-46e3-a12d-19216cb26568/contact-flow/84fb351b-c398-4979-987e-413260b7c63d"
+      },
+      "Identifier": "d71c460f-24f4-434b-8df9-6014cf0d57ec",
+      "Type": "CreateTask",
+      "Transitions": {
+        "NextAction": "",
+        "Errors": [
+          {
+            "NextAction": "",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Name": "",
+        "ContactFlowId": ""
+      },
+      "Identifier": "eecca714-8e64-41c4-aa78-d865af95b60a",
+      "Type": "CreateTask",
+      "Transitions": {
+        "NextAction": "",
+        "Errors": [
+          {
+            "NextAction": "",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "MediaStreamingState": "Enabled",
+        "MediaStreamType": "Audio",
+        "Participants": [
+          {
+            "ParticipantType": "Customer",
+            "MediaDirections": [
+              "To",
+              "From"
+            ]
+          }
+        ]
+      },
+      "Identifier": "481bb604-6750-4134-9572-c269d11656dd",
+      "Type": "UpdateContactMediaStreamingBehavior",
+      "Transitions": {
+        "NextAction": "",
+        "Errors": [
+          {
+            "NextAction": "",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "MediaStreamingState": "Disabled",
+        "Participants": [
+          {
+            "ParticipantType": "Customer",
+            "MediaDirections": [
+              "To",
+              "From"
+            ]
+          }
+        ],
+        "MediaStreamType": "Audio"
+      },
+      "Identifier": "15669d0d-36be-4395-a54a-9d7117077549",
+      "Type": "UpdateContactMediaStreamingBehavior",
+      "Transitions": {
+        "NextAction": "",
+        "Errors": [
+          {
+            "NextAction": "",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "RecordingBehavior": {
+          "RecordedParticipants": [],
+          "IVRRecordingBehavior": "Disabled"
+        }
+      },
+      "Identifier": "4a1d9067-a7c8-4070-a6d3-1fbdf08b924a",
+      "Type": "UpdateContactRecordingBehavior",
+      "Transitions": {
+        "NextAction": ""
+      }
+    },
+    {
+      "Parameters": {
+        "FlowLoggingBehavior": "Enabled"
+      },
+      "Identifier": "26f4aa85-06f7-4146-8508-46f6f9bdf378",
+      "Type": "UpdateFlowLoggingBehavior",
+      "Transitions": {
+        "NextAction": ""
+      }
+    },
+    {
+      "Parameters": {},
+      "Identifier": "7c621686-7e35-4b39-a685-29fcb782047e",
+      "Type": "DistributeByPercentage",
+      "Transitions": {
+        "NextAction": "",
+        "Errors": [
+          {
+            "NextAction": "",
+            "ErrorType": "NoMatchingCondition"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "LoopCount": "3"
+      },
+      "Identifier": "36be16d1-8832-462e-ace7-357ed5dde418",
+      "Type": "Loop",
+      "Transitions": {
+        "NextAction": "",
+        "Conditions": [
+          {
+            "NextAction": "",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "ContinueLooping"
+              ]
+            }
+          },
+          {
+            "NextAction": "",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "DoneLooping"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "ThirdPartyPhoneNumber": "+4407551103806",
+        "ThirdPartyConnectionTimeLimitSeconds": "30",
+        "ContinueFlowExecution": "True",
+        "CallerId": {
+          "Number": "+442046232327"
+        }
+      },
+      "Identifier": "0840b4b4-d494-4479-bdcb-f54fe249f825",
+      "Type": "TransferParticipantToThirdParty",
+      "Transitions": {
+        "NextAction": "",
+        "Errors": [
+          {
+            "NextAction": "",
+            "ErrorType": "CallFailed"
+          },
+          {
+            "NextAction": "",
+            "ErrorType": "ConnectionTimeLimitExceeded"
+          },
+          {
+            "NextAction": "",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "QueueId": "arn:aws:connect:eu-west-2:637796036580:instance/311bc0e2-a159-46e3-a12d-19216cb26568/queue/9d1e923f-14a9-405a-84ce-8673151322a0"
+      },
+      "Identifier": "transfer to queue - set working queue",
+      "Type": "DequeueContactAndTransferToQueue",
+      "Transitions": {
+        "NextAction": "",
+        "Errors": [
+          {
+            "NextAction": "",
+            "ErrorType": "QueueAtCapacity"
+          },
+          {
+            "NextAction": "",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "AgentId": "arn:aws:connect:eu-west-2:637796036580:instance/311bc0e2-a159-46e3-a12d-19216cb26568/agent/d1705c20-4ff5-402c-9950-beb6ae1cf019"
+      },
+      "Identifier": "transfer to queue - set agent queue",
+      "Type": "DequeueContactAndTransferToQueue",
+      "Transitions": {
+        "NextAction": "",
+        "Errors": [
+          {
+            "NextAction": "",
+            "ErrorType": "QueueAtCapacity"
+          },
+          {
+            "NextAction": "",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "RetryDelaySeconds": "600",
+        "InitialCallDelaySeconds": "99",
+        "MaximumConnectionAttempts": "1",
+        "QueueId": "arn:aws:connect:eu-west-2:637796036580:instance/311bc0e2-a159-46e3-a12d-19216cb26568/queue/9d1e923f-14a9-405a-84ce-8673151322a0"
+      },
+      "Identifier": "transfer to callback - set queue",
+      "Type": "CreateCallbackContact",
+      "Transitions": {
+        "NextAction": "",
+        "Errors": [
+          {
+            "NextAction": "",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "RetryDelaySeconds": "600",
+        "InitialCallDelaySeconds": "99",
+        "MaximumConnectionAttempts": "1",
+        "AgentId": "arn:aws:connect:eu-west-2:637796036580:instance/311bc0e2-a159-46e3-a12d-19216cb26568/agent/d1705c20-4ff5-402c-9950-beb6ae1cf019"
+      },
+      "Identifier": "transfer to callback - set agent queue",
+      "Type": "CreateCallbackContact",
+      "Transitions": {
+        "NextAction": "",
+        "Errors": [
+          {
+            "NextAction": "",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "RetryDelaySeconds": "600",
+        "InitialCallDelaySeconds": "99",
+        "MaximumConnectionAttempts": "1",
+        "AgentId": "arn:aws:connect:eu-west-2:637796036580:instance/311bc0e2-a159-46e3-a12d-19216cb26568/agent/d1705c20-4ff5-402c-9950-beb6ae1cf019",
+        "ContactFlowId": "arn:aws:connect:eu-west-2:637796036580:instance/311bc0e2-a159-46e3-a12d-19216cb26568/contact-flow/a19dd5bc-3575-43ea-91a2-c44d148f36be"
+      },
+      "Identifier": "transfer to callback - set creation flow",
+      "Type": "CreateCallbackContact",
+      "Transitions": {
+        "NextAction": "",
+        "Errors": [
+          {
+            "NextAction": "",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "PromptId": "arn:aws:connect:eu-west-2:637796036580:instance/311bc0e2-a159-46e3-a12d-19216cb26568/prompt/c7b8fe8e-c1a9-4101-a509-a8a93bdfe4a3"
+      },
+      "Identifier": "0040143e-9400-46bd-8ac6-da60ef5dcf02",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "",
+        "Errors": [
+          {
+            "NextAction": "",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Messages": [
+          {
+            "PromptId": "arn:aws:connect:eu-west-2:637796036580:instance/311bc0e2-a159-46e3-a12d-19216cb26568/prompt/e060cf7a-2355-47ce-974a-8f8b58788068"
+          },
+          {
+            "Media": {
+              "Uri": "s3123-loopprompt",
+              "SourceType": "S3",
+              "MediaType": "Audio"
+            }
+          }
+        ],
+        "ContinueMessagingDuringInterrupt": "true"
+      },
+      "Identifier": "1a02b685-9145-49de-aaac-c92701d0b4b2",
+      "Type": "MessageParticipantIteratively",
+      "Transitions": {
+        "NextAction": "",
+        "Errors": [
+          {
+            "NextAction": "",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "QueueChannel": "Email",
+        "QueueId": "arn:aws:connect:eu-west-2:637796036580:instance/311bc0e2-a159-46e3-a12d-19216cb26568/queue/9d1e923f-14a9-405a-84ce-8673151322a0"
+      },
+      "Identifier": "get-queue-metrics-queue",
+      "Type": "GetMetricData",
+      "Transitions": {
+        "NextAction": "",
+        "Errors": [
+          {
+            "NextAction": "",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "QueueChannel": "Email",
+        "AgentId": "arn:aws:connect:eu-west-2:637796036580:instance/311bc0e2-a159-46e3-a12d-19216cb26568/agent/d1705c20-4ff5-402c-9950-beb6ae1cf019"
+      },
+      "Identifier": "get-queue-metrics-agent-queue",
+      "Type": "GetMetricData",
+      "Transitions": {
+        "NextAction": "",
+        "Errors": [
+          {
+            "NextAction": "",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "CheckVoiceIdOption": "enrollmentStatus"
+      },
+      "Identifier": "check-voice-id",
+      "Type": "CheckVoiceId",
+      "Transitions": {
+        "NextAction": "",
+        "Conditions": [
+          {
+            "NextAction": "",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "Enrolled"
+              ]
+            }
+          },
+          {
+            "NextAction": "",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "NotEnrolled"
+              ]
+            }
+          },
+          {
+            "NextAction": "",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "OptedOut"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "ComparisonValue": ""
+      },
+      "Identifier": "check_contact_attributes",
+      "Type": "Compare",
+      "Transitions": {
+        "NextAction": "",
+        "Conditions": [
+          {
+            "NextAction": "",
+            "Condition": {
+              "Operator": "TextStartsWith",
+              "Operands": [
+                "2"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "",
+            "ErrorType": "NoMatchingCondition"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {},
+      "Identifier": "check_call_progress",
+      "Type": "CheckOutboundCallStatus",
+      "Transitions": {
+        "NextAction": "",
+        "Conditions": [
+          {
+            "NextAction": "",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "CallAnswered"
+              ]
+            }
+          },
+          {
+            "NextAction": "",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "VoicemailBeep"
+              ]
+            }
+          },
+          {
+            "NextAction": "",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "VoicemailNoBeep"
+              ]
+            }
+          },
+          {
+            "NextAction": "",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "NotDetected"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "HoursOfOperationId": "arn:aws:connect:eu-west-2:637796036580:instance/311bc0e2-a159-46e3-a12d-19216cb26568/operating-hours/5a76bb5f-43ca-4ef4-ae29-02050dcf5770"
+      },
+      "Identifier": "check-hours-of-operation",
+      "Type": "CheckHoursOfOperation",
+      "Transitions": {
+        "NextAction": "",
+        "Conditions": [
+          {
+            "NextAction": "",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "True"
+              ]
+            }
+          },
+          {
+            "NextAction": "",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "False"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "QueueId": "arn:aws:connect:eu-west-2:637796036580:instance/311bc0e2-a159-46e3-a12d-19216cb26568/queue/9d1e923f-14a9-405a-84ce-8673151322a0",
+        "MetricType": "OldestContactInQueueAgeSeconds"
+      },
+      "Identifier": "check-queue-status-queue",
+      "Type": "CheckMetricData",
+      "Transitions": {
+        "NextAction": "",
+        "Errors": [
+          {
+            "NextAction": "",
+            "ErrorType": "NoMatchingCondition"
+          },
+          {
+            "NextAction": "",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "AgentId": "arn:aws:connect:eu-west-2:637796036580:instance/311bc0e2-a159-46e3-a12d-19216cb26568/agent/d1705c20-4ff5-402c-9950-beb6ae1cf019",
+        "MetricType": "OldestContactInQueueAgeSeconds"
+      },
+      "Identifier": "check-queue-status-agent-queue",
+      "Type": "CheckMetricData",
+      "Transitions": {
+        "NextAction": "",
+        "Errors": [
+          {
+            "NextAction": "",
+            "ErrorType": "NoMatchingCondition"
+          },
+          {
+            "NextAction": "",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "RoutingCriteria": {
+          "Steps": [
+            {
+              "Expression": {
+                "AttributeCondition": {
+                  "ComparisonOperator": "Match",
+                  "MatchCriteria": {
+                    "AgentsCriteria": {
+                      "AgentIds": [
+                        "arn:aws:connect:eu-west-2:637796036580:instance/311bc0e2-a159-46e3-a12d-19216cb26568/agent/d1705c20-4ff5-402c-9950-beb6ae1cf019"
+                      ]
+                    }
+                  }
+                }
+              },
+              "Expiry": {
+                "DurationInSeconds": 4
+              }
+            }
+          ]
+        }
+      },
+      "Identifier": "3b3ea2a3-8479-44d0-9238-6ff70824a0fd",
+      "Type": "UpdateContactRoutingCriteria",
+      "Transitions": {
+        "NextAction": "",
+        "Errors": [
+          {
+            "NextAction": "",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "TextToSpeechVoice": "Joanna"
+      },
+      "Identifier": "f8bf7137-e7e7-40fd-a03f-38a03096c1fd",
+      "Type": "UpdateContactTextToSpeechVoice",
+      "Transitions": {
+        "NextAction": "",
+        "Errors": [
+          {
+            "NextAction": "",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "MetricType": "NumberOfAgentsAvailable",
+        "AgentId": "arn:aws:connect:eu-west-2:637796036580:instance/311bc0e2-a159-46e3-a12d-19216cb26568/agent/d1705c20-4ff5-402c-9950-beb6ae1cf019"
+      },
+      "Identifier": "check-staffing-agent-queue",
+      "Type": "CheckMetricData",
+      "Transitions": {
+        "NextAction": "",
+        "Conditions": [
+          {
+            "NextAction": "",
+            "Condition": {
+              "Operator": "NumberGreaterThan",
+              "Operands": [
+                "0"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "",
+            "ErrorType": "NoMatchingCondition"
+          },
+          {
+            "NextAction": "",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "MetricType": "NumberOfAgentsOnline",
+        "QueueId": "arn:aws:connect:eu-west-2:637796036580:instance/311bc0e2-a159-46e3-a12d-19216cb26568/queue/9d1e923f-14a9-405a-84ce-8673151322a0"
+      },
+      "Identifier": "check-staffing-queue",
+      "Type": "CheckMetricData",
+      "Transitions": {
+        "NextAction": "",
+        "Conditions": [
+          {
+            "NextAction": "",
+            "Condition": {
+              "Operator": "NumberGreaterThan",
+              "Operands": [
+                "0"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "",
+            "ErrorType": "NoMatchingCondition"
+          },
+          {
+            "NextAction": "",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "QueueTimeAdjustmentSeconds": "1"
+      },
+      "Identifier": "change_routing_prio",
+      "Type": "UpdateContactRoutingBehavior",
+      "Transitions": {
+        "NextAction": ""
+      }
+    },
+    {
+      "Parameters": {
+        "EventHooks": {
+          "AgentWhisper": "arn:aws:connect:eu-west-2:637796036580:instance/311bc0e2-a159-46e3-a12d-19216cb26568/contact-flow/1e50fee0-f311-4520-b672-644b6ebd649d"
+        },
+        "EventHooksConfiguration": {
+          "AgentWhisper": {
+            "DisableExecution": "false"
+          }
+        }
+      },
+      "Identifier": "set-whisper-flow-agent",
+      "Type": "UpdateContactEventHooks",
+      "Transitions": {
+        "NextAction": "",
+        "Errors": [
+          {
+            "NextAction": "",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "EventHooks": {
+          "CustomerWhisper": "arn:aws:connect:eu-west-2:637796036580:instance/311bc0e2-a159-46e3-a12d-19216cb26568/contact-flow/f207d159-36e1-4399-898e-62fcf54354fb"
+        },
+        "EventHooksConfiguration": {
+          "CustomerWhisper": {
+            "DisableExecution": "false"
+          }
+        }
+      },
+      "Identifier": "set-whisper-flow-customer",
+      "Type": "UpdateContactEventHooks",
+      "Transitions": {
+        "NextAction": "",
+        "Errors": [
+          {
+            "NextAction": "",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "StoreInput": "True",
+        "InputTimeLimitSeconds": "5",
+        "PromptId": "arn:aws:connect:eu-west-2:637796036580:instance/311bc0e2-a159-46e3-a12d-19216cb26568/prompt/e0844f87-43ec-429d-b0a9-dfc3d92a8e25",
+        "DTMFConfiguration": {
+          "DisableCancelKey": "False",
+          "InterdigitTimeLimitSeconds": "5"
+        },
+        "InputValidation": {
+          "CustomValidation": {
+            "MaximumLength": "20"
+          }
+        }
+      },
+      "Identifier": "storecustomerinput-promptlib",
+      "Type": "GetParticipantInput",
+      "Transitions": {
+        "NextAction": "",
+        "Errors": [
+          {
+            "NextAction": "",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "StoreInput": "True",
+        "InputTimeLimitSeconds": "5",
+        "PromptId": "arn:aws:connect:eu-west-2:637796036580:instance/311bc0e2-a159-46e3-a12d-19216cb26568/prompt/f0d6f6fb-d41f-4fc4-97ec-0d7aaba2fadc",
+        "DTMFConfiguration": {
+          "DisableCancelKey": "False",
+          "InterdigitTimeLimitSeconds": "5"
+        },
+        "InputValidation": {
+          "CustomValidation": {
+            "MaximumLength": "20"
+          }
+        },
+        "InputEncryption": {
+          "EncryptionKeyId": "keyid123-storecustomerinput",
+          "Key": "key123-storecustomerinput"
+        }
+      },
+      "Identifier": "storecustomerinput-keyid",
+      "Type": "GetParticipantInput",
+      "Transitions": {
+        "NextAction": "",
+        "Errors": [
+          {
+            "NextAction": "",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "StoreInput": "True",
+        "InputTimeLimitSeconds": "5",
+        "Media": {
+          "Uri": "s3filepath123-storecustomerinput",
+          "SourceType": "S3",
+          "MediaType": "Audio"
+        },
+        "DTMFConfiguration": {
+          "DisableCancelKey": "False",
+          "InterdigitTimeLimitSeconds": "5"
+        },
+        "InputValidation": {
+          "CustomValidation": {
+            "MaximumLength": "20"
+          }
+        }
+      },
+      "Identifier": "storecustomerinput-s3",
+      "Type": "GetParticipantInput",
+      "Transitions": {
+        "NextAction": "",
+        "Errors": [
+          {
+            "NextAction": "",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "StoreInput": "False",
+        "InputTimeLimitSeconds": "5"
+      },
+      "Identifier": "73b0efd8-f2ac-4fc0-9cf5-70bd4a088843",
+      "Type": "GetParticipantInput",
+      "Transitions": {
+        "NextAction": "",
+        "Errors": [
+          {
+            "NextAction": "",
+            "ErrorType": "InputTimeLimitExceeded"
+          },
+          {
+            "NextAction": "",
+            "ErrorType": "NoMatchingCondition"
+          },
+          {
+            "NextAction": "",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "StoreInput": "False",
+        "InputTimeLimitSeconds": "5"
+      },
+      "Identifier": "5a2de58b-8180-4ef8-823b-1703ff360584",
+      "Type": "GetParticipantInput",
+      "Transitions": {
+        "NextAction": "",
+        "Errors": [
+          {
+            "NextAction": "",
+            "ErrorType": "InputTimeLimitExceeded"
+          },
+          {
+            "NextAction": "",
+            "ErrorType": "NoMatchingCondition"
+          },
+          {
+            "NextAction": "",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Media": {
+          "Uri": "s3123-playprompt",
+          "SourceType": "S3",
+          "MediaType": "Audio"
+        }
+      },
+      "Identifier": "e9065ba1-d120-42d1-a80c-e5bd7a979032",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "",
+        "Errors": [
+          {
+            "NextAction": "",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "LambdaFunctionARN": "arn:aws:lambda:eu-west-2:637796036580:function:sample-connect-function",
+        "InvocationTimeLimitSeconds": "3",
+        "InvocationType": "SYNCHRONOUS",
+        "ResponseValidation": {
+          "ResponseType": "STRING_MAP"
+        }
+      },
+      "Identifier": "5d0faabb-248a-4afa-bcfd-375f24db4320",
+      "Type": "InvokeLambdaFunction",
+      "Transitions": {
+        "NextAction": "",
+        "Errors": [
+          {
+            "NextAction": "",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "WisdomMessageTemplateArn": "arn:aws:wisdom:eu-west-2:637796036580:message-template/dec64ab9-078b-496e-bdc4-2ac41e4bd43c/e178c87c-348a-4a0d-9132-79ef3096f42f:$ACTIVE_VERSION",
+        "WisdomKnowledgeBaseArn": "arn:aws:wisdom:eu-west-2:637796036580:knowledge-base/dec64ab9-078b-496e-bdc4-2ac41e4bd43c"
+      },
+      "Identifier": "send_message_sms",
+      "Type": "RenderMessageTemplate",
+      "Transitions": {
+        "NextAction": "send_message_sms-pGnD0FpyVp",
+        "Errors": [
+          {
+            "NextAction": "",
+            "ErrorType": "NoMatchingError"
+          },
+          {
+            "NextAction": "",
+            "ErrorType": "TemplateRenderingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "SourceEndpoint": {
+          "Address": "$.SystemEndpoint.Address",
+          "Type": "CONNECT_PHONENUMBER_ARN"
+        },
+        "DestinationEndpoint": {
+          "Address": "+447551103806",
+          "Type": "TELEPHONE_NUMBER"
+        },
+        "ContactFlowArn": "arn:aws:connect:eu-west-2:637796036580:instance/311bc0e2-a159-46e3-a12d-19216cb26568/contact-flow/dc0ff628-5f85-4780-b3d0-984c36c924f7",
+        "ContactSubtype": "connect:SMS",
+        "RelatedContact": "CURRENT"
+      },
+      "Identifier": "send_message_sms-pGnD0FpyVp",
+      "Type": "StartOutboundChatContact",
+      "Transitions": {
+        "NextAction": "",
+        "Errors": [
+          {
+            "NextAction": "",
+            "ErrorType": "NoMatchingError"
+          },
+          {
+            "NextAction": "",
+            "ErrorType": "TemplateRenderingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "WisdomMessageTemplateArn": "arn:aws:wisdom:eu-west-2:637796036580:message-template/dec64ab9-078b-496e-bdc4-2ac41e4bd43c/53cc26f7-ab90-4a98-a946-4e86e3470c04:$ACTIVE_VERSION",
+        "WisdomKnowledgeBaseArn": "arn:aws:wisdom:eu-west-2:637796036580:knowledge-base/dec64ab9-078b-496e-bdc4-2ac41e4bd43c"
+      },
+      "Identifier": "send_message_email",
+      "Type": "RenderMessageTemplate",
+      "Transitions": {
+        "NextAction": "send_message_email-AQ7HJVyinh",
+        "Errors": [
+          {
+            "NextAction": "",
+            "ErrorType": "NoMatchingError"
+          },
+          {
+            "NextAction": "",
+            "ErrorType": "TemplateRenderingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Channel": "EMAIL",
+        "RelatedContact": "CURRENT"
+      },
+      "Identifier": "send_message_email-AQ7HJVyinh",
+      "Type": "CreateContact",
+      "Transitions": {
+        "NextAction": "send_message_email-YqXDnbi6Xx",
+        "Errors": [
+          {
+            "NextAction": "",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "FromEmailAddress": {
+          "EmailAddress": "info@contactflow-templater.email.connect.aws",
+          "DisplayName": "Info"
+        },
+        "DestinationEmailAddress": {
+          "EmailAddress": "samii.ansari@hotmail.com",
+          "DisplayName": "Info @ ABC Solutions"
+        },
+        "EmailMessage": {
+          "MessageSourceType": "RAW"
+        }
+      },
+      "Identifier": "send_message_email-YqXDnbi6Xx",
+      "Type": "StartOutboundEmailContact",
+      "Transitions": {
+        "NextAction": "",
+        "Errors": [
+          {
+            "NextAction": "",
+            "ErrorType": "NoMatchingError"
+          },
+          {
+            "NextAction": "",
+            "ErrorType": "TemplateRenderingError"
+          }
+        ]
+      }
+    }
+  ]
+}

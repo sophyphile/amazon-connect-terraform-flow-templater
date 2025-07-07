@@ -1,0 +1,1164 @@
+{
+    "authenticate_customer": [
+        {
+            "status": "complete",
+            "exportedJsonBlockName": "AuthenticateParticipant",
+            "vars": [
+                {
+                    "name": "cognito_user_pool_id",
+                    "metadataRelativePathKey": {
+                        "used": true,
+                        "paths": [
+                            "parameters.CognitoConfiguration.UserPoolArn.displayName"
+                        ]
+                    },
+                    "actionsRelativePathKey": null,
+                    "actionsRelativePathValue": "Parameters.CognitoConfiguration.UserPoolArn",
+                    "type": "Arn",
+                    "description": "The ARN of the AWS Cognito user pool to use for authentication"
+                },
+                {
+                    "name": "cognito_app_client_id",
+                    "metadataRelativePathKey": {
+                        "used": true,
+                        "paths": [
+                            "parameters.CognitoConfiguration.AppClientId.displayName"
+                        ]
+                    },
+                    "actionsRelativePathKey": null,
+                    "actionsRelativePathValue": "Parameters.CognitoConfiguration.AppClientId",
+                    "type": "id",
+                    "description": "The ID of the AWS Cognito app client to use for authentication"
+                }
+            ]
+        }
+    ],
+    "call_phone_number": [
+        {
+            "status": "complete",
+            "exportedJsonBlockName": "CompleteOutboundCall", 
+            "vars": [
+                {
+                    "name": "caller_id_number",
+                    "metadataRelativePathKey": {
+                        "used": true,
+                        "paths": [
+                            "parameters.CallerId.Number.displayName",
+                            "claimedPhoneNumber.text"
+                        ]
+                    },
+                    "actionsRelativePathKey": null,
+                    "actionsRelativePathValue": "Parameters.CallerId.Number",
+                    "type": "String",
+                    "description": "The phone number to use as the caller ID"
+                }
+            ]
+        }
+    ],
+    "create_persistent_contact_association": [
+        {
+            "status": "complete",
+            "exportedJsonBlockName": "CreatePersistentContactAssociation",
+            "vars": []
+        }
+    ],
+    "create_task": [
+        {
+            "status": "complete",
+            "exportedJsonBlockName": "CreateTask", 
+            "vars": [
+                {
+                    "name": "flow_to_run_task_arn",
+                    "metadataRelativePathKey": {
+                        "used": false
+                    },
+                    "actionsRelativePathKey": null,
+                    "actionsRelativePathValue": "Parameters.ContactFlowId",
+                    "type": "Arn",
+                    "description": "The ARN of the flow to run the task"
+                },
+                {
+                    "name": "set_references_${reference_key}_value",
+                    "metadataRelativePathKey": {
+                        "used": false
+                    },
+                    "actionsRelativePathKey": "Parameters.References.*",
+                    "actionsRelativePathValue": "Parameters.References.*.Value",
+                    "type": "String",
+                    "description": "The value of the reference to set"
+                }
+            ]
+        }
+    ],
+    "get_customer_input": [
+        {
+            "status": "complete",
+            "exportedJsonBlockName": "GetParticipantInput", 
+            "vars": [
+                {
+                    "name": "prompt_id",
+                    "metadataRelativePathKey": {
+                        "used": false
+                    },
+                    "actionsRelativePathKey": null,
+                    "actionsRelativePathValue": "Parameters.PromptId",
+                    "type": "Arn",
+                    "description": "The ARN of the prompt to play to get customer input"
+                },
+                {
+                    "name": "s3_file_path",
+                    "metadataRelativePathKey": {
+                        "used": false
+                    },
+                    "actionsRelativePathKey": null,
+                    "actionsRelativePathValue": "Parameters.Media.Uri",
+                    "type": "String",
+                    "description": "The S3 file path of the prompt to play to get customer input"
+                },
+                {
+                    "name": "lex_bot_alias_arn",
+                    "metadataRelativePathKey": {
+                        "used": false
+                    },
+                    "actionsRelativePathKey": null,
+                    "actionsRelativePathValue": "Parameters.LexV2Bot.AliasArn",
+                    "type": "String",
+                    "description": "The ARN of the Lex V2 bot alias to use to get customer input"
+                }
+            ]
+        }
+    ],
+    "loop_prompts": [
+        {
+            "status": "complete",
+            "exportedJsonBlockName": "MessageParticipantIteratively", 
+            "vars": [
+                {
+                    "name": "prompt_id",
+                    "metadataRelativePathKey": {
+                        "used": true,
+                        "paths": [
+                            "audio.id"
+                        ]
+                    },
+                    "actionsRelativePathKey": null,
+                    "actionsRelativePathValue": "Parameters.Messages[*].PromptId",
+                    "type": "ListOfArns",
+                    "description": "The ARN of the prompt to play"
+                },
+                {
+                    "name": "s3_file_path",
+                    "metadataRelativePathKey": {
+                        "used": false
+                    },
+                    "actionsRelativePathKey": null,
+                    "actionsRelativePathValue": "Parameters.Messages[*].Media.Uri",
+                    "type": "ListOfArns",
+                    "description": "The S3 file path of the prompt to play"
+                }
+            ]
+        }
+    ],
+    "play_prompt": [
+        {
+            "status": "complete",
+            "exportedJsonBlockName": "MessageParticipant", 
+            "vars": [
+                {
+                    "name": "prompt_id",
+                    "metadataRelativePathKey": {
+                        "used": true,
+                        "paths": [
+                            "audio.id"
+                        ]
+                    },
+                    "actionsRelativePathKey": null,
+                    "actionsRelativePathValue": "Parameters.PromptId",
+                    "type": "ListOfArns",
+                    "description": "The ARN of the prompt to play"
+                },
+                {
+                    "name": "s3_file_path",
+                    "metadataRelativePathKey": {
+                        "used": false
+                    },
+                    "actionsRelativePathKey": null,
+                    "actionsRelativePathValue": "Parameters.Media.Uri",
+                    "type": "Id",
+                    "description": "The S3 file path of the prompt to play"
+                }
+            ]
+        }
+    ],
+    "send_message": [
+        {
+            "status": "complete",
+            "exportedJsonBlockName": "RenderMessageTemplate", 
+            "vars": [
+                {
+                    "name": "template_arn",
+                    "metadataRelativePathKey": {
+                        "used": false
+                    },
+                    "actionsRelativePathKey": null,
+                    "actionsRelativePathValue": "Parameters.WisdomMessageTemplateArn",
+                    "type": "Arn",
+                    "description": "The ARN of the message template to render"
+                },
+                {
+                    "name": "knowledge_base_arn",
+                    "metadataRelativePathKey": {
+                        "used": false
+                    },
+                    "actionsRelativePathKey": null,
+                    "actionsRelativePathValue": "Parameters.WisdomKnowledgeBaseArn",
+                    "type": "Arn",
+                    "description": "The ARN of the knowledge base to use for the message"
+                }
+            ]
+        },
+        {
+            "status": "complete",
+            "exportedJsonBlockName": "CreateContact", 
+            "vars": []
+        },
+        {
+            "status": "complete",
+            "exportedJsonBlockName": "StartOutboundEmailContact", 
+            "vars": [
+                {
+                    "name": "email_from_email_address",
+                    "metadataRelativePathKey": {
+                        "used": false
+                    },
+                    "actionsRelativePathKey": null,
+                    "actionsRelativePathValue": "Parameters.FromEmailAddress.EmailAddress",
+                    "type": "String",
+                    "description": "The email address of the from email address"
+                }
+            ]
+        },
+        {
+            "status": "draft", // TODO: Pending sms_from_number (metadata) + source endpoint path changes when manually selected.
+            "exportedJsonBlockName": "StartOutboundChatContact", 
+            "vars": [
+                {
+                    "name": "sms_from_number",
+                    "metadataRelativePathKey": {
+                        "used": false
+                    },
+                    "actionsRelativePathKey": null,
+                    "actionsRelativePathValue": "Parameters.SourceEndpoint.Address",
+                    "type": "String",
+                    "description": "The email address of the from email address"
+                },
+                {
+                    "name": "sms_flow_arn",
+                    "metadataRelativePathKey": {
+                        "used": false
+                    },
+                    "actionsRelativePathKey": null,
+                    "actionsRelativePathValue": "Parameters.ContactFlowArn",
+                    "type": "String",
+                    "description": "The ARN of the flow to assign the SMS contact to an agent"
+                }
+            ]
+        }
+    ],
+    "store_customer_input": [
+        {
+            "status": "complete",
+            "exportedJsonBlockName": "GetParticipantInput", 
+            "vars": [
+                {
+                    "name": "prompt_id",
+                    "metadataRelativePathKey": {
+                        "used": true,
+                        "paths": [
+                            "audio.id"
+                        ]
+                    },
+                    "actionsRelativePathKey": null,
+                    "actionsRelativePathValue": "Parameters.PromptId",
+                    "type": "Arn",
+                    "description": "The ARN of the prompt to play"
+                },
+                {
+                    "name": "s3_file_path",
+                    "metadataRelativePathKey": {
+                        "used": false
+                    },
+                    "actionsRelativePathKey": null,
+                    "actionsRelativePathValue": "Parameters.Media.Uri",
+                    "type": "Id",
+                    "description": "The S3 file path of the prompt to play"
+                },
+                {
+                    "name": "key_id",
+                    "metadataRelativePathKey": {
+                        "used": false
+                    },
+                    "actionsRelativePathKey": null,
+                    "actionsRelativePathValue": "Parameters.InputEncryption.EncryptionKeyId",
+                    "type": "Id",
+                    "description": "The ID of the key to encrypt the customer input with (from Connect attached key)"
+                },
+                {
+                    "name": "key",
+                    "metadataRelativePathKey": {
+                        "used": false
+                    },
+                    "actionsRelativePathKey": null,
+                    "actionsRelativePathValue": "Parameters.InputEncryption.Key",
+                    "type": "Id",
+                    "description": "The key to encrypt the customer input with e.g. X509 certificate"
+                }
+            ]
+        }
+    ],
+    "amazon_q_connect": [
+        {
+            "status": "complete",
+            "exportedJsonBlockName": "CreateWisdomSession", 
+            "vars": [
+                {
+                    "name": "domain_arn",
+                    "metadataRelativePathKey": {
+                        "used": true,
+                        "paths": [
+                            "parameters.WisdomAssistantArn.displayName"
+                        ]
+                    },
+                    "actionsRelativePathKey": null,
+                    "actionsRelativePathValue": "Parameters.WisdomAssistantArn",
+                    "type": "Arn",
+                    "description": "The ARN of the Amazon Q Connect domain"
+                }
+            ]
+        }
+    ],
+    "contact_tags": [
+        {
+            "status": "complete",
+            "exportedJsonBlockName": "TagContact", 
+            "vars": []
+        }
+    ],
+    "hold_customer_or_agent": [
+        {
+            "status": "complete",
+            "exportedJsonBlockName": "UpdatePreviousContactParticipantState",
+            "vars": []
+        }
+    ],
+    "resume_contact": [
+        {
+            "status": "complete",
+            "exportedJsonBlockName": "ResumeContact", 
+            "vars": []
+        }
+    ],
+    "set_callback_number": [
+        {
+            "status": "complete",
+            "exportedJsonBlockName": "UpdateContactCallbackNumber", 
+            "vars": []
+        }
+    ],
+    "set_contact_attributes": [
+        {
+            "status": "complete",
+            "exportedJsonBlockName": "UpdateContactAttributes", 
+            "vars": []
+        }
+    ],
+    "set_customer_queue_flow": [
+        {
+            "status": "complete",
+            "exportedJsonBlockName": "UpdateContactEventHooks", 
+            "vars": [
+                {
+                    "name": "flow_arn",
+                    "metadataRelativePathKey": {
+                        "used": true,
+                        "paths": [
+                            "contactFlow.id"
+                        ]
+                    },
+                    "actionsRelativePathKey": null,
+                    "actionsRelativePathValue": "Parameters.EventHooks.CustomerQueue",
+                    "type": "Arn",
+                    "description": "The ARN of the Customer Queue flow to set"
+                }
+            ]
+        }
+    ],
+    "set_disconnect_flow": [
+        {
+            "status": "complete",
+            "exportedJsonBlockName": "UpdateContactEventHooks", 
+            "vars": [
+                {
+                    "name": "flow_arn",
+                    "metadataRelativePathKey": {
+                        "used": true,
+                        "paths": [
+                            "contactFlow.id"
+                        ]
+                    }, // can find block where metadata is located by using the .Identifier key
+                    "actionsRelativePathKey": null,
+                    "actionsRelativePathValue": "Parameters.EventHooks.CustomerRemaining",
+                    "type": "Arn",
+                    "description": "The ARN of the hours of operation to check"
+                }
+            ]
+        }
+    ],
+    "set_event_flow": [
+        {
+            "status": "complete",
+            "exportedJsonBlockName": "UpdateContactEventHooks", 
+            "vars": [
+                {
+                    "name": "disconnect_flow_for_agent_ui_arn",
+                    "metadataRelativePathKey": {
+                        "used": false
+                    },
+                    "actionsRelativePathKey": null,
+                    "actionsRelativePathValue": "Parameters.EventHooks.DisconnectAgentUI",
+                    "type": "Arn",
+                    "description": "The ARN of the Event flow - Disconnect flow for Agent UI"
+                }
+            ]
+        },
+        {
+            "status": "complete",
+            "exportedJsonBlockName": "UpdateContactEventHooks", 
+            "vars": [
+                {
+                    "name": "flow_at_contact_pause_arn",
+                    "metadataRelativePathKey": {
+                        "used": false
+                    },
+                    "actionsRelativePathKey": null,
+                    "actionsRelativePathValue": "Parameters.EventHooks.PauseContact",
+                    "type": "Arn",
+                    "description": "The ARN of the Event flow - Flow at contact pause"
+                }
+            ]
+        },
+        {
+            "status": "complete",
+            "exportedJsonBlockName": "UpdateContactEventHooks", 
+            "vars": [
+                {
+                    "name": "flow_at_contact_resume_arn",
+                    "metadataRelativePathKey": {
+                        "used": false
+                    },
+                    "actionsRelativePathKey": null,
+                    "actionsRelativePathValue": "Parameters.EventHooks.ResumeContact",
+                    "type": "Arn",
+                    "description": "The ARN of the Event flow - Flow at contact resume"
+                }
+            ]
+        },
+        {
+            "status": "complete",
+            "exportedJsonBlockName": "UpdateContactEventHooks", 
+            "vars": [
+                {
+                    "name": "default_flow_for_agent_ui_arn",
+                    "metadataRelativePathKey": {
+                        "used": false
+                    },
+                    "actionsRelativePathKey": null,
+                    "actionsRelativePathValue": "Parameters.EventHooks.DefaultAgentUI",
+                    "type": "Arn",
+                    "description": "The ARN of the Event flow - Default flow for Agent UI"
+                }
+            ]
+        }
+    ],
+    "set_hold_flow": [
+        {
+            "status": "complete",
+            "exportedJsonBlockName": "UpdateContactEventHooks", 
+            "vars": [
+                {
+                    "name": "customer_hold_flow_arn",
+                    "metadataRelativePathKey": {
+                        "used": true,
+                        "paths": [
+                            "contactFlow.id"
+                        ]
+                    },
+                    "actionsRelativePathKey": null,
+                    "actionsRelativePathValue": "Parameters.EventHooks.CustomerHold",
+                    "type": "Arn",
+                    "description": "The ARN of the Hold flow for Customer"
+                }
+            ]
+        },
+        {
+            "status": "complete",
+            "exportedJsonBlockName": "UpdateContactEventHooks", 
+            "vars": [
+                {
+                    "name": "agent_hold_flow_arn",
+                    "metadataRelativePathKey": {
+                        "used": true,
+                        "paths": [
+                            "contactFlow.id"
+                        ]
+                    },
+                    "actionsRelativePathKey": null,
+                    "actionsRelativePathValue": "Parameters.EventHooks.AgentHold",
+                    "type": "Arn",
+                    "description": "The ARN of the Hold flow for Agent"
+                }
+            ]
+        }
+    ],
+    "set_routing_criteria": [
+        {
+            "status": "complete",
+            "exportedJsonBlockName": "UpdateContactRoutingCriteria", 
+            "vars": [
+                {
+                    "name": "agent_arns",
+                    "metadataRelativePathKey": {
+                        "used": false
+                    },
+                    "actionsRelativePathKey": null,
+                    "actionsRelativePathValue": "Parameters.RoutingCriteria.Steps[*].Expression.AttributeCondition.MatchCriteria.AgentsCriteria.AgentIds",
+                    "type": "ListOfArns",
+                    "description": "The ARN of the agent(s) to route to"
+                }
+            ]
+        }
+    ],
+    "set_voice": [
+        {
+            "status": "complete",
+            "exportedJsonBlockName": "UpdateContactTextToSpeechVoice", 
+            "vars": []
+        }
+    ],
+    "set_voice_id": [
+        {
+            "status": "complete",
+            "exportedJsonBlockName": "UpdateContactData", 
+            "vars": []
+        }
+    ],
+    "set_whisper_flow": [
+        {
+            "status": "complete",
+            "exportedJsonBlockName": "UpdateContactEventHooks", 
+            "vars": [
+                {
+                    "name": "customer_whisper_flow_arn",
+                    "metadataRelativePathKey": {
+                        "used": true,
+                        "paths": [
+                            "contactFlow.id"
+                        ]
+                    },
+                    "actionsRelativePathKey": null,
+                    "actionsRelativePathValue": "Parameters.EventHooks.CustomerWhisper",
+                    "type": "Arn",
+                    "description": "The ARN of the whisper flow for the customer"
+                },
+                {
+                    "name": "agent_whisper_flow_arn",
+                    "metadataRelativePathKey": {
+                        "used": true,
+                        "paths": [
+                            "contactFlow.id"
+                        ]
+                    },
+                    "actionsRelativePathKey": null,
+                    "actionsRelativePathValue": "Parameters.EventHooks.AgentWhisper",
+                    "type": "Arn",
+                    "description": "The ARN of the whisper flow for the agent"
+                }
+            ]
+        }
+    ],
+    "set_working_queue": [
+        {
+            "status": "complete",
+            "exportedJsonBlockName": "UpdateContactTargetQueue", 
+            "vars": [
+                {
+                    "name": "queue_arn",
+                    "metadataRelativePathKey": {
+                        "used": false
+                    },
+                    "actionsRelativePathKey": null,
+                    "actionsRelativePathValue": "Parameters.QueueId",
+                    "type": "Arn",
+                    "description": "The ARN of the queue to set as working queue"
+                },
+                {
+                    "name": "agent_arn",
+                    "metadataRelativePathKey": {
+                        "used": false
+                    },
+                    "actionsRelativePathKey": null,
+                    "actionsRelativePathValue": "Parameters.AgentId",
+                    "type": "Arn",
+                    "description": "The ARN of the agent whose queue to set as working queue"
+                }
+            ]
+        }
+    ],
+    "change_routing_priority_or_age": [
+        {
+            "status": "complete",
+            "exportedJsonBlockName": "UpdateContactRoutingBehavior", 
+            "vars": []
+        }
+    ],
+    "check_call_progress": [
+        {
+            "status": "complete",
+            "exportedJsonBlockName": "CheckOutboundCallStatus", 
+            "vars": []
+        }
+    ],
+    "check_contact_attributes": [
+        {
+            "status": "complete",
+            "exportedJsonBlockName": "Compare", 
+            "vars": []
+        }
+    ],
+    "check_hours_of_operation": [
+        {
+            "status": "complete",
+            "exportedJsonBlockName": "CheckHoursOfOperation",
+            "vars": [
+                {
+                    "name": "hours_of_operation_arn",
+                    "metadataRelativePathKey": {
+                        "used": true,
+                        "paths": [
+                            "Hours.id"
+                        ]
+                    },
+                    "actionsRelativePathKey": null,
+                    "actionsRelativePathValue": "Parameters.HoursOfOperationId",
+                    "type": "Arn",
+                    "description": "The ARN of the hours of operation to check"
+                }
+            ]
+        }
+    ],
+    "check_queue_status": [
+        {
+            "status": "complete",
+            "exportedJsonBlockName": "CheckMetricData", 
+            "vars": [
+                {
+                    "name": "queue_arn",
+                    "metadataRelativePathKey": {
+                        "used": true,
+                        "paths": [
+                            "queue.id"
+                        ]
+                    },
+                    "actionsRelativePathKey": null,
+                    "actionsRelativePathValue": "Parameters.QueueId",
+                    "type": "Arn",
+                    "description": "The ARN of the queue to check the status of"
+                },
+                {
+                    "name": "agent_arn",
+                    "metadataRelativePathKey": {
+                        "used": true,
+                        "paths": [
+                            "queue.id"
+                        ]
+                    },
+                    "actionsRelativePathKey": null,
+                    "actionsRelativePathValue": "Parameters.AgentId",
+                    "type": "Arn",
+                    "description": "The ARN of the agent whose queue status to check"
+                }
+            ]
+        }
+    ],
+    "check_staffing": [
+        {
+            "status": "complete",
+            "exportedJsonBlockName": "CheckMetricData", 
+            "vars": [
+                {
+                    "name": "queue_arn",
+                    "metadataRelativePathKey": {
+                        "used": true,
+                        "paths": [
+                            "queue.id"
+                        ]
+                    },
+                    "actionsRelativePathKey": null,
+                    "actionsRelativePathValue": "Parameters.QueueId",
+                    "type": "Arn",
+                    "description": "The ARN of the queue whose staffing status to check"
+                },
+                {
+                    "name": "agent_arn",
+                    "metadataRelativePathKey": {
+                        "used": true,
+                        "paths": [
+                            "queue.id"
+                        ]
+                    },
+                    "actionsRelativePathKey": null,
+                    "actionsRelativePathValue": "Parameters.AgentId",
+                    "type": "Arn",
+                    "description": "The ARN of the agent whose staffing status to check"
+                }
+            ]
+        }
+    ],
+    "check_voice_id": [
+        {
+            "status": "complete",
+            "exportedJsonBlockName": "CheckVoiceId", 
+            "vars": []
+        }
+    ],
+    "get_queue_metrics": [
+        {
+            "status": "complete",
+            "exportedJsonBlockName": "GetMetricData",
+            "vars": [
+                {
+                    "name": "queue_arn",
+                    "metadataRelativePathKey": {
+                        "used": true,
+                        "paths": [
+                            "queue.id"
+                        ]
+                    },
+                    "actionsRelativePathKey": null,
+                    "actionsRelativePathValue": "Parameters.QueueId",
+                    "type": "Arn",
+                    "description": "The ARN of the queue to get metrics for"
+                },
+                {
+                    "name": "agent_arn",
+                    "metadataRelativePathKey": {
+                        "used": true,
+                        "paths": [
+                            "queue.id"
+                        ]
+                    },
+                    "actionsRelativePathKey": null,
+                    "actionsRelativePathValue": "Parameters.AgentId",
+                    "type": "Arn",
+                    "description": "The ARN of the agent queue to get metrics for"
+                }
+            ]
+        }
+    ],
+    "set_logging_behaviour": [
+        {
+            "status": "complete",
+            "exportedJsonBlockName": "UpdateFlowLoggingBehavior", 
+            "vars": []
+        }
+    ],
+    "set_recording_and_analytics_behaviour": [
+        {
+            "status": "complete",
+            "exportedJsonBlockName": "UpdateContactRecordingBehavior", 
+            "vars": []
+        }
+    ],
+    "start_media_streaming": [
+        {
+            "status": "complete",
+            "exportedJsonBlockName": "UpdateContactMediaStreamingBehavior", 
+            "vars": []
+        }
+    ],
+    "stop_media_streaming": [
+        {
+            "status": "complete",
+            "exportedJsonBlockName": "UpdateContactMediaStreamingBehavior", 
+            "vars": []
+        }
+    ],
+    "distribute_by_percentage": [
+        {
+            "status": "complete",
+            "exportedJsonBlockName": "DistributeByPercentage", 
+            "vars": []
+        }
+    ],
+    "loop": [
+        {
+            "status": "complete",
+            "exportedJsonBlockName": "Loop", 
+            "vars": []
+        }
+    ],
+    "wait": [
+        {
+            "status": "complete",
+            "exportedJsonBlockName": "Wait",
+            "vars": []
+        }
+    ],
+    "cases": [
+        {
+            "status": "complete",
+            "exportedJsonBlockName": "CreateCase",
+            "vars": [
+                {
+                    "name": "case_template_id",
+                    "metadataRelativePathKey": {
+                        "used": true,
+                        "paths": [
+                            "parameters.CaseTemplateId"
+                        ]
+                    },
+                    "actionsRelativePathKey": null,
+                    "actionsRelativePathValue": "Parameters.CaseTemplateId",
+                    "type": "Id",
+                    "description": "The ID of the case template to use to create the case"
+                }
+            ]
+        },
+        {
+            "status": "complete",
+            "exportedJsonBlockName": "GetCase",
+            "vars": []
+        },
+        {
+            "status": "complete",
+            "exportedJsonBlockName": "UpdateCase",
+            "vars": []
+        }
+    ],
+    "customer_profiles": [
+        {
+            "status": "complete",
+            "exportedJsonBlockName": "AssociateContactToCustomerProfile",
+            "vars": [
+                {
+                    "name": "associate_contact_to_profile_profile_id",
+                    "metadataRelativePathKey": {
+                        "used": true,
+                        "paths": [
+                            "parameters.ProfileId"
+                        ]
+                    },
+                    "actionsRelativePathKey": null,
+                    "actionsRelativePathValue": "Parameters.ProfileRequestData.ProfileId",
+                    "type": "Id",
+                    "description": "The ID of the profile to associate the contact to"
+                },
+                {
+                    "name": "associate_contact_to_profile_contact_id",
+                    "metadataRelativePathKey": {
+                        "used": true,
+                        "paths": [
+                            "parameters.ContactId"
+                        ]
+                    },
+                    "actionsRelativePathKey": null,
+                    "actionsRelativePathValue": "Parameters.ProfileRequestData.ContactId",
+                    "type": "Id",
+                    "description": "The ID of the contact to associate to the profile"
+                }
+            ]
+        },
+        {
+            "status": "complete",
+            "exportedJsonBlockName": "GetCustomerProfileObject",
+            "vars": [
+                {
+                    "name": "get_customer_profile_object_profile_id",
+                    "metadataRelativePathKey": {
+                        "used": true,
+                        "paths": [
+                            "parameters.ProfileId"
+                        ]
+                    },
+                    "actionsRelativePathKey": null,
+                    "actionsRelativePathValue": "Parameters.ProfileRequestData.ProfileId",
+                    "type": "Id",
+                    "description": "The ID of the profile to get the object for"
+                }
+            ]
+        },
+        {
+            "status": "complete",
+            "exportedJsonBlockName": "GetCalculatedAttributesForCustomerProfile",
+            "vars": [
+                {
+                    "name": "get_calculated_attributes_profile_id",
+                    "metadataRelativePathKey": {
+                        "used": false,
+                        "paths": [
+                            "parameters.ProfileId"
+                        ]
+                    },
+                    "actionsRelativePathKey": null,
+                    "actionsRelativePathValue": "Parameters.ProfileRequestData.ProfileId",
+                    "type": "Id",
+                    "description": "The ID of the profile to get"
+                }
+            ]
+        },
+        {
+            "status": "complete",
+            "exportedJsonBlockName": "GetCustomerProfile",
+            "vars": []
+        },
+        {
+            "status": "complete",
+            "exportedJsonBlockName": "CreateCustomerProfile",
+            "vars": []
+        },
+        {
+            "status": "complete",
+            "exportedJsonBlockName": "UpdateCustomerProfile",
+            "vars": []
+        },
+        {
+            "status": "complete",
+            "exportedJsonBlockName": "CheckSegmentMembershipForCustomerProfile",
+            "vars": [
+                {
+                    "name": "check_segment_membership_profile_id",
+                    "metadataRelativePathKey": {
+                        "used": false
+                    },
+                    "actionsRelativePathKey": null,
+                    "actionsRelativePathValue": "Parameters.ProfileRequestData.ProfileId",
+                    "type": "Id",
+                    "description": "The ID of the profile to check"
+                },
+                {
+                    "name": "check_segment_membership_segment_name",
+                    "metadataRelativePathKey": {
+                        "used": false
+                    },
+                    "actionsRelativePathKey": null,
+                    "actionsRelativePathValue": "Parameters.ProfileRequestData.SegmentName",
+                    "type": "String",
+                    "description": "The name of the segment to check"
+                }
+            ]
+        }
+    ],
+    "aws_lambda_function": [
+        {
+            "status": "complete",
+            "exportedJsonBlockName": "InvokeLambdaFunction", 
+            "vars": [
+                {
+                    "name": "function_arn",
+                    "metadataRelativePathKey": {
+                        "used": true,
+                        "paths": [
+                            "parameters.LambdaFunctionARN"
+                        ]
+                    },
+                    "actionsRelativePathKey": null,
+                    "actionsRelativePathValue": "Parameters.LambdaFunctionARN",
+                    "type": "Arn",
+                    "description": "The ARN of the Lambda function to invoke"
+                }
+            ]
+        }
+    ],
+    "invoke_module": [
+        {
+            "status": "complete",
+            "exportedJsonBlockName": "InvokeFlowModule", 
+            "vars": [
+                {
+                    "name": "module_arn",
+                    "metadataRelativePathKey": {
+                        "used": false
+                    },
+                    "actionsRelativePathKey": null,
+                    "actionsRelativePathValue": "Parameters.FlowModuleId",
+                    "type": "Arn",
+                    "description": "The ARN of the module to invoke"
+                }
+            ]
+        }
+    ],
+    "show_view": [
+        {
+            "status": "complete",
+            "exportedJsonBlockName": "ShowView", 
+            "vars": [
+                {
+                    "name": "view_alias_arn",
+                    "metadataRelativePathKey": {
+                        "used": true,
+                        "paths": [
+                            "parameters.LambdaFunctionARN"
+                        ]
+                    },
+                    "actionsRelativePathKey": null,
+                    "actionsRelativePathValue": "Parameters.ViewResource.Id",
+                    "type": "Arn",
+                    "description": "The ARN of the alias of theview to show"
+                }
+            ]
+        }
+    ],
+    "disconnect": [
+        {
+            "status": "complete",
+            "exportedJsonBlockName": "DisconnectParticipant",
+            "vars": []
+        }
+    ],
+    "end_flow_or_resume": [
+        {
+            "status": "complete",
+            "exportedJsonBlockName": "EndFlowExecution",
+            "vars": []
+        }
+    ],
+    "return": [
+        {
+            "status": "complete",
+            "exportedJsonBlockName": "EndFlowModuleExecution",
+            "vars": []
+        }
+    ],
+    "transfer_to_agent": [
+        {
+            "status": "complete",
+            "exportedJsonBlockName": "TransferContactToAgent", 
+            "vars": []
+        }
+    ],
+    "transfer_to_flow": [
+        {
+            "status": "complete",
+            "exportedJsonBlockName": "TransferToFlow", 
+            "vars": [
+                {
+                    "name": "flow_arn",
+                    "metadataRelativePathKey": {
+                        "used": false
+                    },
+                    "actionsRelativePathKey": null,
+                    "actionsRelativePathValue": "Parameters.ContactFlowId",
+                    "type": "Arn",
+                    "description": "The ARN of the flow to transfer the contact to"
+                }
+            ]
+        }
+    ],
+    "transfer_to_phone_number": [
+        {
+            "status": "complete",
+            "exportedJsonBlockName": "TransferParticipantToThirdParty",
+            "vars": [
+                {
+                    "name": "caller_id_number",
+                    "metadataRelativePathKey": {
+                        "used": true,
+                        "paths": [
+                            "parameters.CallerId.Number.displayName"
+                        ]
+                    },
+                    "actionsRelativePathKey": null,
+                    "actionsRelativePathValue": "Parameters.CallerId.Number",
+                    "type": "String",
+                    "description": "The phone number to use as the caller ID"
+                }
+            ]
+        }
+    ],
+    "transfer_to_queue": [
+        {
+            "status": "complete",
+            "exportedJsonBlockName": "DequeueContactAndTransferToQueue",
+            "vars": [
+                {
+                    "name": "set_working_queue_arn",
+                    "metadataRelativePathKey": {
+                        "used": true,
+                        "paths": [
+                            "queue.id"
+                        ]
+                    },
+                    "actionsRelativePathKey": null,
+                    "actionsRelativePathValue": "Parameters.QueueId",
+                    "type": "Arn",
+                    "description": "The ID of the queue to transfer the contact to"
+                },
+                {
+                    "name": "set_agent_arn",
+                    "metadataRelativePathKey": {
+                        "used": true,
+                        "paths": [
+                            "queue.id"
+                        ]
+                    },
+                    "actionsRelativePathKey": null,
+                    "actionsRelativePathValue": "Parameters.AgentId",
+                    "type": "Arn",
+                    "description": "The ARN of the agent to transfer the contact to"
+                }
+            ]
+        },
+        {
+            "status": "complete",
+            "exportedJsonBlockName": "CreateCallbackContact",
+            "vars": [
+                {
+                    "name": "callback_queue_set_working_queue_arn",
+                    "metadataRelativePathKey": {
+                        "used": true,
+                        "paths": [
+                            "queue.id"
+                        ]
+                    },
+                    "actionsRelativePathKey": null,
+                    "actionsRelativePathValue": "Parameters.QueueId",
+                    "type": "Arn",
+                    "description": "The ARN of the callback queue to transfer the contact to"
+                },
+                {
+                    "name": "callback_queue_set_agent_queue_arn",
+                    "metadataRelativePathKey": {
+                        "used": true,
+                        "paths": [
+                            "queue.id"
+                        ]
+                    },
+                    "actionsRelativePathKey": null,
+                    "actionsRelativePathValue": "Parameters.AgentId",
+                    "type": "Arn",
+                    "description": "The ARN of the agent to transfer the contact to as callback"
+                },
+                {
+                    "name": "callback_queue_set_creation_flow_arn",
+                    "metadataRelativePathKey": {
+                        "used": false
+                    },
+                    "actionsRelativePathKey": null,
+                    "actionsRelativePathValue": "Parameters.ContactFlowId",
+                    "type": "Arn",
+                    "description": "The ARN of the creation flow to transfer the contact to for callback"
+                }
+            ]
+        }
+    ]
+}

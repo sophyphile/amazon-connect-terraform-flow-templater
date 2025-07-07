@@ -1,0 +1,1702 @@
+{
+    "inbound_flow": [
+        { 
+            "authenticate_customer": {
+                "default": true
+            }
+        },
+        {
+            "create_persistent_contact_association": {
+                "default": true
+            }
+        },
+        {
+            "create_task": {
+                "default": true
+            }
+        },
+        {
+            "get_customer_input": {
+                "default": true
+            }
+        },
+        {
+            "play_prompt": {
+                "default": true
+            }
+        },
+        {
+            "send_message": {
+                "default": true
+            }
+        },
+        {
+            "store_customer_input": {
+                "default": true
+            }
+        },
+        {
+            "amazon_q_connect": {
+                "default": true
+            }
+        },
+        {
+            "contact_tags": {
+                "default": true
+            }
+        },
+        {
+            "hold_customer_or_agent": {
+                "default": true
+            }
+        },
+        {
+            "resume_contact": {
+                "default": true
+            }
+        },
+        {
+            "set_callback_number": {
+                "default": true
+            }
+        },
+        {
+            "set_contact_attributes": {
+                "default": true
+            }
+        },
+        {
+            "set_customer_queue_flow": {
+                "default": true
+            }
+        },
+        {
+            "set_disconnect_flow": {
+                "default": true
+            }
+        },
+        {
+            "set_event_flow": {
+                "default": true
+            }
+        },
+        {
+            "set_hold_flow": {
+                "default": true
+            }
+        },
+        {
+            "set_routing_criteria": {
+                "default": true
+            }
+        },
+        {
+            "set_voice": {
+                "default": true
+            }
+        },
+        {
+            "set_voice_id": {
+                "default": true
+            }
+        },
+        {
+            "set_whisper_flow": {
+                "default": true
+            }
+        },
+        {
+            "set_working_queue": {
+                "default": true
+            }
+        },
+        {
+            "change_routing_priority_or_age": {
+                "default": true
+            }
+        },
+        {
+            "check_call_progress": {
+                "default": true
+            }
+        },
+        {
+            "check_contact_attributes": {
+                "default": true
+            }
+        },
+        {
+            "check_hours_of_operation": {
+                "default": true
+            }
+        },
+        {
+            "check_queue_status": {
+                "default": true
+            }
+        },
+        {
+            "check_staffing": {
+                "default": true
+            }
+        },
+        {
+            "check_voice_id": {
+                "default": true
+            }
+        },
+        {
+            "get_queue_metrics": {
+                "default": true
+            }
+        },
+        {
+            "set_logging_behaviour": {
+                "default": true
+            }
+        },
+        {
+            "set_recording_and_analytics_behaviour": {
+                "default": true
+            }
+        },
+        {
+            "start_media_streaming": {
+                "default": true
+            }
+        },
+        {
+            "stop_media_streaming": {
+                "default": true
+            }
+        },
+        {
+            "distribute_by_percentage": {
+                "default": true
+            }
+        },
+        {
+            "loop": {
+                "default": true
+            }
+        },
+        {
+            "wait": {
+                "default": true
+            }
+        },
+        {
+            "cases": {
+                "default": true
+            }
+        },
+        {
+            "customer_profiles": {
+                "default": true
+            }
+        },
+        {
+            "aws_lambda_function": {
+                "default": true
+            }
+        },
+        {
+            "invoke_module": {
+                "default": true
+            }
+        },
+        {
+            "show_view": {
+                "default": true
+            }
+        },
+        {
+            "disconnect": {
+                "default": true
+            }
+        },
+        {
+            "end_flow_or_resume": {
+                "default": true
+            }
+        },
+        {
+            "transfer_to_flow": {
+                "default": true
+            }
+        },
+        {
+            "transfer_to_phone_number": {
+                "default": true
+            }
+        },
+        {
+            "transfer_to_queue": {
+                "default": true
+            }
+        }
+    ],
+    "customer_queue_flow": [
+        {
+            "create_persistent_contact_association": {
+                "default": true
+            }
+        },
+        {
+            "create_task": {
+                "default": true
+            }
+        },
+        {
+            "get_customer_input": {
+                "default": true
+            }
+        },
+        {
+            "loop_prompts": {
+                "default": true
+            }
+        },
+        {
+            "play_prompt": {
+                "default": true
+            }
+        },
+        {
+            "send_message": {
+                "default": true
+            }
+        },
+        {
+            "store_customer_input": {
+                "default": true
+            }
+        },
+        {
+            "amazon_q_connect": {
+                "default": true
+            }
+        },
+        {
+            "contact_tags": {
+                "default": true
+            }
+        },
+        {
+            "resume_contact": {
+                "default": true
+            }
+        },
+        {
+            "set_callback_number": {
+                "default": true
+            }
+        },
+        {
+            "set_contact_attributes": {
+                "default": true
+            }
+        },
+        {
+            "set_disconnect_flow": {
+                "default": true
+            }
+        },
+        {
+            "set_event_flow": {
+                "default": true
+            }
+        },
+        {
+            "set_hold_flow": {
+                "default": true
+            }
+        },
+        {
+            "set_routing_criteria": {
+                "default": true
+            }
+        },
+        {
+            "set_voice": {
+                "default": true
+            }
+        },
+        {
+            "set_voice_id": {
+                "default": true
+            }
+        },
+        {
+            "set_whisper_flow": {
+                "default": true
+            }
+        },
+        {
+            "change_routing_priority_or_age": {
+                "default": true
+            }
+        },
+        {
+            "check_call_progress": {
+                "default": true
+            }
+        },
+        {
+            "check_contact_attributes": {
+                "default": true
+            }
+        },
+        {
+            "check_hours_of_operation": {
+                "default": true
+            }
+        },
+        {
+            "check_queue_status": {
+                "default": true
+            }
+        },
+        {
+            "check_staffing": {
+                "default": true
+            }
+        },
+        {
+            "check_voice_id": {
+                "default": true
+            }
+        },
+        {
+            "get_queue_metrics": {
+                "default": true
+            }
+        },
+        {
+            "set_logging_behaviour": {
+                "default": true
+            }
+        },
+        {
+            "set_recording_and_analytics_behaviour": {
+                "default": true
+            }
+        },
+        {
+            "start_media_streaming": {
+                "default": true
+            }
+        },
+        {
+            "stop_media_streaming": {
+                "default": true
+            }
+        },
+        {
+            "distribute_by_percentage": {
+                "default": true
+            }
+        },
+        {
+            "loop": {
+                "default": true
+            }
+        },
+        {
+            "wait": {
+                "default": true
+            }
+        },
+        {
+            "cases": {
+                "default": true
+            }
+        },
+        {
+            "customer_profiles": {
+                "default": true
+            }
+        },
+        {
+            "aws_lambda_function": {
+                "default": true
+            }
+        },
+        {
+            "disconnect": {
+                "default": true
+            }
+        },
+        {
+            "end_flow_or_resume": {
+                "default": true
+            }
+        },
+        {
+            "transfer_to_phone_number": {
+                "default": true
+            }
+        },
+        {
+            "transfer_to_queue": {
+                "default": true
+            }
+        }
+    ],
+    "customer_hold_flow": [
+        {
+            "create_persistent_contact_association": {
+                "default": true
+            }
+        },
+        {
+            "create_task": {
+                "default": true
+            }
+        },
+        {
+            "loop_prompts": {
+                "default": true
+            }
+        },
+        {
+            "send_message": {
+                "default": true
+            }
+        },
+        {
+            "contact_tags": {
+                "default": true
+            }
+        },
+        {
+            "resume_contact": {
+                "default": true
+            }
+        },
+        {
+            "set_contact_attributes": {
+                "default": true
+            }
+        },
+        {
+            "set_disconnect_flow": {
+                "default": true
+            }
+        },
+        {
+            "set_event_flow": {
+                "default": true
+            }
+        },
+        {
+            "set_voice": {
+                "default": true
+            }
+        },
+        {
+            "check_call_progress": {
+                "default": true
+            }
+        },
+        {
+            "check_contact_attributes": {
+                "default": true
+            }
+        },
+        {
+            "get_queue_metrics": {
+                "default": true
+            }
+        },
+        {
+            "set_logging_behaviour": {
+                "default": true
+            }
+        },
+        {
+            "loop": {
+                "default": true
+            }
+        },
+        {
+            "cases": {
+                "default": true
+            }
+        },
+        {
+            "customer_profiles": {
+                "default": true
+            }
+        },
+        {
+            "aws_lambda_function": {
+                "default": true
+            }
+        },
+        {
+            "end_flow_or_resume": {
+                "default": true
+            }
+        }
+    ],
+    "customer_whisper_flow": [
+        {
+            "create_persistent_contact_association": {
+                "default": true
+            }
+        },
+        {
+            "create_task": {
+                "default": true
+            }
+        },
+        {
+            "play_prompt": {
+                "default": true
+            }
+        },
+        {
+            "send_message": {
+                "default": true
+            }
+        },
+        {
+            "amazon_q_connect": {
+                "default": true
+            }
+        },
+        {
+            "contact_tags": {
+                "default": true
+            }
+        },
+        {
+            "resume_contact": {
+                "default": true
+            }
+        },
+        {
+            "set_contact_attributes": {
+                "default": true
+            }
+        },
+        {
+            "set_disconnect_flow": {
+                "default": true
+            }
+        },
+        {
+            "set_event_flow": {
+                "default": true
+            }
+        },
+        {
+            "set_voice": {
+                "default": true
+            }
+        },
+        {
+            "set_voice_id": {
+                "default": true
+            }
+        },
+        {
+            "check_call_progress": {
+                "default": true
+            }
+        },
+        {
+            "check_contact_attributes": {
+                "default": true
+            }
+        },
+        {
+            "check_voice_id": {
+                "default": true
+            }
+        },
+        {
+            "get_queue_metrics": {
+                "default": true
+            }
+        },
+        {
+            "set_logging_behaviour": {
+                "default": true
+            }
+        },
+        {
+            "start_media_streaming": {
+                "default": true
+            }
+        },
+        {
+            "stop_media_streaming": {
+                "default": true
+            }
+        },
+        {
+            "loop": {
+                "default": true
+            }
+        },
+        {
+            "cases": {
+                "default": true
+            }
+        },
+        {
+            "customer_profiles": {
+                "default": true
+            }
+        },
+        {
+            "aws_lambda_function": {
+                "default": true
+            }
+        },
+        {
+            "end_flow_or_resume": {
+                "default": true
+            }
+        }
+    ],
+    "outbound_whisper_flow": [
+        {
+            "call_phone_number": {
+                "default": true
+            }
+        },
+        {
+            "create_persistent_contact_association": {
+                "default": true
+            }
+        },
+        {
+            "create_task": {
+                "default": true
+            }
+        },
+        {
+            "play_prompt": {
+                "default": true
+            }
+        },
+        {
+            "send_message": {
+                "default": true
+            }
+        },
+        {
+            "amazon_q_connect": {
+                "default": true
+            }
+        },
+        {
+            "contact_tags": {
+                "default": true
+            }
+        },
+        {
+            "resume_contact": {
+                "default": true
+            }
+        },
+        {
+            "set_contact_attributes": {
+                "default": true
+            }
+        },
+        {
+            "set_disconnect_flow": {
+                "default": true
+            }
+        },
+        {
+            "set_event_flow": {
+                "default": true
+            }
+        },
+        {
+            "set_hold_flow": {
+                "default": true
+            }
+        },
+        {
+            "set_voice": {
+                "default": true
+            }
+        },
+        {
+            "set_voice_id": {
+                "default": true
+            }
+        },
+        {
+            "check_call_progress": {
+                "default": true
+            }
+        },
+        {
+            "check_contact_attributes": {
+                "default": true
+            }
+        },
+        {
+            "check_voice_id": {
+                "default": true
+            }
+        },
+        {
+            "get_queue_metrics": {
+                "default": true
+            }
+        },
+        {
+            "set_logging_behaviour": {
+                "default": true
+            }
+        },
+        {
+            "set_recording_and_analytics_behaviour": {
+                "default": true
+            }
+        },
+        {
+            "start_media_streaming": {
+                "default": true
+            }
+        },
+        {
+            "stop_media_streaming": {
+                "default": true
+            }
+        },
+        {
+            "distribute_by_percentage": {
+                "default": true
+            }
+        },
+        {
+            "loop": {
+                "default": true
+            }
+        },
+        {
+            "cases": {
+                "default": true
+            }
+        },
+        {
+            "customer_profiles": {
+                "default": true
+            }
+        },
+        {
+            "aws_lambda_function": {
+                "default": true
+            }
+        },
+        {
+            "end_flow_or_resume": {
+                "default": true
+            }
+        }
+    ],
+    "agent_hold_flow": [
+        {
+            "create_persistent_contact_association": {
+                "default": true
+            }
+        },
+        {
+            "create_task": {
+                "default": true
+            }
+        },
+        {
+            "loop_prompts": {
+                "default": true
+            }
+        },
+        {
+            "send_message": {
+                "default": true
+            }
+        },
+        {
+            "contact_tags": {
+                "default": true
+            }
+        },
+        {
+            "resume_contact": {
+                "default": true
+            }
+        },
+        {
+            "set_contact_attributes": {
+                "default": true
+            }
+        },
+        {
+            "set_disconnect_flow": {
+                "default": true
+            }
+        },
+        {
+            "set_event_flow": {
+                "default": true
+            }
+        },
+        {
+            "set_voice": {
+                "default": true
+            }
+        },
+        {
+            "check_call_progress": {
+                "default": true
+            }
+        },
+        {
+            "check_contact_attributes": {
+                "default": true
+            }
+        },
+        {
+            "get_queue_metrics": {
+                "default": true
+            }
+        },
+        {
+            "set_logging_behaviour": {
+                "default": true
+            }
+        },
+        {
+            "loop": {
+                "default": true
+            }
+        },
+        {
+            "cases": {
+                "default": true
+            }
+        },
+        {
+            "customer_profiles": {
+                "default": true
+            }
+        },
+        {
+            "aws_lambda_function": {
+                "default": true
+            }
+        },  
+        {
+            "end_flow_or_resume": {
+                "default": true
+            }
+        }
+    ],
+    "agent_whisper_flow": [
+        {
+            "create_persistent_contact_association": {
+                "default": true
+            }
+        },
+        {
+            "create_task": {
+                "default": true
+            }
+        },
+        {
+            "play_prompt": {
+                "default": true
+            }
+        },
+        {
+            "send_message": {
+                "default": true
+            }
+        },
+        {
+            "amazon_q_connect": {
+                "default": true
+            }
+        },
+        {
+            "contact_tags": {
+                "default": true
+            }
+        },
+        {
+            "resume_contact": {
+                "default": true
+            }
+        },
+        {
+            "set_contact_attributes": {
+                "default": true
+            }
+        },
+        {
+            "set_disconnect_flow": {
+                "default": true
+            }
+        },
+        {
+            "set_event_flow": {
+                "default": true
+            }
+        },
+        {
+            "set_voice": {
+                "default": true
+            }
+        },
+        {
+            "set_voice_id": {
+                "default": true
+            }
+        },
+        {
+            "check_call_progress": {
+                "default": true
+            }
+        },
+        {
+            "check_contact_attributes": {
+                "default": true
+            }
+        },
+        {
+            "check_voice_id": {
+                "default": true
+            }
+        },
+        {
+            "get_queue_metrics": {
+                "default": true
+            }
+        },
+        {
+            "set_logging_behaviour": {
+                "default": true
+            }
+        },
+        {
+            "start_media_streaming": {
+                "default": true
+            }
+        },
+        {
+            "stop_media_streaming": {
+                "default": true
+            }
+        },
+        {
+            "loop": {
+                "default": true
+            }
+        },
+        {
+            "cases": {
+                "default": true
+            }
+        },
+        {
+            "customer_profiles": {
+                "default": true
+            }
+        },
+        {
+            "aws_lambda_function": {
+                "default": true
+            }
+        },
+        {
+            "end_flow_or_resume": {
+                "default": true
+            }
+        }
+    ],
+    "transfer_to_agent_flow": [
+        {
+            "create_persistent_contact_association": {
+                "default": true
+            }
+        },
+        {
+            "create_task": {
+                "default": true
+            }
+        },
+        {
+            "get_customer_input": {
+                "default": true
+            }
+        },
+        {
+            "play_prompt": {
+                "default": true
+            }
+        },
+        {
+            "send_message": {
+                "default": true
+            }
+        },
+        {
+            "store_customer_input": {
+                "default": true 
+            }
+        },
+        {
+            "amazon_q_connect": {
+                "default": true
+            }
+        },
+        {
+            "contact_tags": {
+                "default": true
+            }
+        },
+        {
+            "hold_customer_or_agent": {
+                "default": true
+            }
+        },
+        {
+            "resume_contact": {
+                "default": true
+            }
+        },
+        {
+            "set_callback_number": {
+                "default": true
+            }
+        },
+        {
+            "set_contact_attributes": {
+                "default": true
+            }
+        },
+        {
+            "set_customer_queue_flow": {
+                "default": true
+            }
+        },
+        {
+            "set_disconnect_flow": {
+                "default": true
+            }
+        },
+        {
+            "set_event_flow": {
+                "default": true
+            }
+        },
+        {
+            "set_hold_flow": {
+                "default": true
+            }
+        },
+        {
+            "set_routing_criteria": {
+                "default": true
+            }
+        },
+        {
+            "set_voice": {
+                "default": true
+            }
+        },
+        {
+            "set_voice_id": {
+                "default": true
+            }
+        },
+        {
+            "set_whisper_flow": {
+                "default": true
+            }
+        },
+        {
+            "set_working_queue": {
+                "default": true
+            }
+        },
+        {
+            "change_routing_priority_or_age": {
+                "default": true
+            }
+        },
+        {
+            "check_call_progress": {
+                "default": true
+            }
+        },
+        {
+            "check_contact_attributes": {
+                "default": true
+            }
+        },
+        {
+            "check_hours_of_operation": {
+                "default": true
+            }
+        },
+        {
+            "check_queue_status": {
+                "default": true
+            }
+        },
+        {
+            "check_staffing": {
+                "default": true
+            }
+        },
+        {
+            "check_voice_id": {
+                "default": true
+            }
+        },
+        {
+            "get_queue_metrics": {
+                "default": true
+            }
+        },
+        {
+            "set_logging_behaviour": {
+                "default": true
+            }
+        },
+        {
+            "set_recording_and_analytics_behaviour": {
+                "default": true
+            }
+        },
+        {
+            "start_media_streaming": {
+                "default": true
+            }
+        },
+        {
+            "stop_media_streaming": {
+                "default": true
+            }
+        },
+        {
+            "distribute_by_percentage": {
+                "default": true
+            }
+        },
+        {
+            "loop": {
+                "default": true
+            }
+        },
+        {
+            "cases": {
+                "default": true
+            }
+        },
+        {
+            "customer_profiles": {
+                "default": true
+            }
+        },
+        {
+            "aws_lambda_function": {
+                "default": true
+            }
+        },
+        {
+            "disconnect": {
+                "default": true
+            }
+        },
+        {
+            "end_flow_or_resume": {
+                "default": true
+            }
+        },
+        {
+            "transfer_to_agent": {
+                "default": true
+            }
+        },
+        {
+            "transfer_to_flow": {
+                "default": true
+            }
+        },
+        {
+            "transfer_to_phone_number": {
+                "default": true
+            }
+        },
+        {
+            "transfer_to_queue": {
+                "default": true
+            }
+        }
+    ],
+    "transfer_to_queue_flow": [
+        {
+            "create_persistent_contact_association": {
+                "default": true
+            }
+        },
+        {
+            "create_task": {
+                "default": true
+            }
+        },
+        {
+            "get_customer_input": {
+                "default": true
+            }
+        },
+        {
+            "play_prompt": {
+                "default": true
+            }
+        },
+        {
+            "send_message": {
+                "default": true
+            }
+        },
+        {
+            "store_customer_input": {
+                "default": true
+            }
+        },
+        {
+            "amazon_q_connect": {
+                "default": true
+            }
+        },
+        {
+            "contact_tags": {
+                "default": true
+            }
+        },
+        {
+            "hold_customer_or_agent": {
+                "default": true
+            }
+        },
+        {
+            "resume_contact": {
+                "default": true
+            }
+        },
+        {
+            "set_callback_number": {
+                "default": true
+            }
+        },
+        {
+            "set_contact_attributes": {
+                "default": true
+            }
+        },
+        {
+            "set_customer_queue_flow": {
+                "default": true
+            }
+        },
+        {
+            "set_disconnect_flow": {
+                "default": true
+            }
+        },
+        {
+            "set_event_flow": {
+                "default": true
+            }
+        },
+        {
+            "set_hold_flow": {
+                "default": true
+            }
+        },
+        {
+            "set_routing_criteria": {
+                "default": true
+            }
+        },
+        {
+            "set_voice": {
+                "default": true
+            }
+        },
+        {
+            "set_voice_id": {
+                "default": true
+            }
+        },
+        {
+            "set_whisper_flow": {
+                "default": true
+            }
+        },
+        {
+            "set_working_queue": {
+                "default": true
+            }
+        },
+        {
+            "change_routing_priority_or_age": {
+                "default": true
+            }
+        },
+        {
+            "check_call_progress": {
+                "default": true
+            }
+        },
+        {
+            "check_contact_attributes": {
+                "default": true
+            }
+        },
+        {
+            "check_hours_of_operation": {
+                "default": true
+            }
+        },
+        {
+            "check_queue_status": {
+                "default": true
+            }
+        },
+        {
+            "check_staffing": {
+                "default": true
+            }
+        },
+        {
+            "check_voice_id": {
+                "default": true
+            }
+        },
+        {
+            "get_queue_metrics": {
+                "default": true
+            }
+        },
+        {
+            "set_logging_behaviour": {
+                "default": true
+            }
+        },
+        {
+            "set_recording_and_analytics_behaviour": {
+                "default": true
+            }
+        },
+        {
+            "start_media_streaming": {
+                "default": true
+            }
+        },
+        {
+            "stop_media_streaming": {
+                "default": true
+            }
+        },
+        {
+            "distribute_by_percentage": {
+                "default": true
+            }
+        },
+        {
+            "loop": {
+                "default": true
+            }
+        },
+        {
+            "cases": {
+                "default": true
+            }   
+        },
+        {
+            "customer_profiles": {
+                "default": true
+            }
+        },
+        {
+            "aws_lambda_function": {
+                "default": true
+            }
+        },
+        {
+            "disconnect": {
+                "default": true
+            }
+        },
+        {
+            "end_flow_or_resume": {
+                "default": true 
+            }
+        },
+        {
+            "transfer_to_agent": {
+                "default": true
+            }
+        },
+        {
+            "transfer_to_flow": {
+                "default": true
+            }
+        },
+        {
+            "transfer_to_phone_number": {
+                "default": true
+            }
+        },
+        {
+            "transfer_to_queue": {
+                "default": true
+            }
+        }
+    ],
+    "module": [
+        {
+            "authenticate_customer": {
+                "default": true
+            }
+        },
+        {
+            "create_persistent_contact_association": {
+                "default": true
+            }
+        },
+        {
+            "create_task": {
+                "default": true
+            }
+        },
+        {
+            "get_customer_input": {
+                "default": true
+            }
+        },
+        {
+            "play_prompt": {
+                "default": true
+            }
+        },
+        {
+            "send_message": {
+                "default": true
+            }
+        },
+        {
+            "store_customer_input": {
+                "default": true
+            }
+        },
+        {
+            "amazon_q_connect": {
+                "default": true
+            }
+        },
+        {
+            "contact_tags": {
+                "default": true
+            }
+        },
+        {
+            "hold_customer_or_agent": {
+                "default": true
+            }
+        },
+        {
+            "resume_contact": {
+                "default": true
+            }
+        },
+        {
+            "set_callback_number": {
+                "default": true
+            }
+        },
+        {
+            "set_contact_attributes": {
+                "default": true
+            }
+        },
+        {
+            "set_customer_queue_flow": {
+                "default": true
+            }
+        },
+        {
+            "set_disconnect_flow": {
+                "default": true
+            }
+        },
+        {
+            "set_event_flow": { 
+                "default": true
+            }
+        },
+        {
+            "set_hold_flow": {
+                "default": true
+            }
+        },
+        {
+            "set_routing_criteria": {
+                "default": true
+            }
+        },
+        {
+            "set_voice": {  
+                "default": true
+            }
+        },
+        {
+            "set_voice_id": {
+                "default": true
+            }
+        },
+        {
+            "set_whisper_flow": {
+                "default": true
+            }
+        },
+        {
+            "set_working_queue": {
+                "default": true
+            }
+        },
+        {
+            "change_routing_priority_or_age": {
+                "default": true
+            }
+        },
+        {
+            "check_call_progress": {
+                "default": true 
+            }
+        },
+        {
+            "check_contact_attributes": {
+                "default": true
+            }
+        },
+        {
+            "check_hours_of_operation": {
+                "default": true
+            }
+        },
+        {
+            "check_queue_status": { 
+                "default": true
+            }
+        },
+        {
+            "check_staffing": {
+                "default": true
+            }
+        },
+        {
+            "check_voice_id": {
+                "default": true
+            }
+        },
+        {
+            "get_queue_metrics": {
+                "default": true
+            }
+        },
+        {
+            "set_logging_behaviour": {
+                "default": true
+            }
+        },
+        {
+            "set_recording_and_analytics_behaviour": {
+                "default": true
+            }
+        },
+        {
+            "start_media_streaming": {
+                "default": true
+            }
+        },
+        {
+            "stop_media_streaming": {
+                "default": true
+            }
+        },
+        {
+            "distribute_by_percentage": {
+                "default": true
+            }
+        },
+        {
+            "loop": {
+                "default": true
+            }
+        },
+        {
+            "wait": {
+                "default": true
+            }
+        },
+        {
+            "cases": {
+                "default": true
+            }
+        },
+        {
+            "customer_profiles": {
+                "default": true
+            }
+        },
+        {
+            "aws_lambda_function": {
+                "default": true
+            }
+        },
+        {
+            "show_view": {
+                "default": true
+            }
+        },
+        {
+            "disconnect": {
+                "default": true
+            }
+        },
+        {
+            "end_flow_or_resume": {
+                "default": true
+            }
+        },
+        {
+            "return": {
+                "default": true
+            }
+        },
+        {
+            "transfer_to_phone_number": {
+                "default": true
+            }
+        },
+        {
+            "transfer_to_queue": {
+                "default": true
+            }
+        }
+    ]
+}

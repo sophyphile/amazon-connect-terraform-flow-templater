@@ -1,0 +1,261 @@
+{
+  "Version": "2019-10-30",
+  "StartAction": "",
+  "Metadata": {
+    "entryPointPosition": {
+      "x": 50,
+      "y": 50
+    },
+    "ActionMetadata": {
+      "hold-customer-or-agent-agent-hold": {
+        "position": {
+          "x": 611,
+          "y": 65
+        },
+        "isFriendlyName": true
+      },
+      "hold-customer-or-agent-conference": {
+        "position": {
+          "x": 296,
+          "y": 62
+        },
+        "isFriendlyName": true
+      },
+      "hold-customer-or-agent-customer-hold": {
+        "position": {
+          "x": 943,
+          "y": 65
+        },
+        "isFriendlyName": true
+      },
+      "set-customer-queue-flow": {
+        "position": {
+          "x": 1532,
+          "y": 72
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "EventHooks": {
+            "CustomerQueue": {
+              "displayName": "Sample interruptible queue flow with callback"
+            }
+          }
+        },
+        "contactFlow": {
+          "text": "Sample interruptible queue flow with callback",
+          "id": "arn:aws:connect:eu-west-2:637796036580:instance/311bc0e2-a159-46e3-a12d-19216cb26568/contact-flow/da983e8e-c084-4442-873e-c68fbb36062c"
+        },
+        "customerOrAgent": true
+      },
+      "set-working-queue-agent": {
+        "position": {
+          "x": 2626,
+          "y": 84
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "AgentId": {
+            "displayName": "sansari (Sami Ansari)"
+          }
+        },
+        "queue": {
+          "text": "sansari (Sami Ansari)"
+        }
+      },
+      "set-working-queue-queue": {
+        "position": {
+          "x": 2334,
+          "y": 82
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "QueueId": {
+            "displayName": "BasicQueue"
+          }
+        },
+        "queue": {
+          "text": "BasicQueue"
+        }
+      },
+      "show-view": {
+        "position": {
+          "x": 3060,
+          "y": 62
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "ViewResource": {
+            "Id": {
+              "displayName": "Hi"
+            }
+          },
+          "InvocationTimeLimitSeconds": {
+            "unit": 1
+          }
+        }
+      },
+      "return": {
+        "position": {
+          "x": 3456,
+          "y": 89
+        },
+        "isFriendlyName": true
+      }
+    },
+    "Annotations": [],
+    "name": "custom_module",
+    "description": "",
+    "status": "saved",
+    "hash": {}
+  },
+  "Actions": [
+    {
+      "Parameters": {
+        "PreviousContactParticipantState": "AgentOnHold"
+      },
+      "Identifier": "hold-customer-or-agent-agent-hold",
+      "Type": "UpdatePreviousContactParticipantState",
+      "Transitions": {
+        "NextAction": "",
+        "Errors": [
+          {
+            "NextAction": "",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "PreviousContactParticipantState": "OffHold"
+      },
+      "Identifier": "hold-customer-or-agent-conference",
+      "Type": "UpdatePreviousContactParticipantState",
+      "Transitions": {
+        "NextAction": "",
+        "Errors": [
+          {
+            "NextAction": "",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "PreviousContactParticipantState": "CustomerOnHold"
+      },
+      "Identifier": "hold-customer-or-agent-customer-hold",
+      "Type": "UpdatePreviousContactParticipantState",
+      "Transitions": {
+        "NextAction": "",
+        "Errors": [
+          {
+            "NextAction": "",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "EventHooks": {
+          "CustomerQueue": "arn:aws:connect:eu-west-2:637796036580:instance/311bc0e2-a159-46e3-a12d-19216cb26568/contact-flow/da983e8e-c084-4442-873e-c68fbb36062c"
+        }
+      },
+      "Identifier": "set-customer-queue-flow",
+      "Type": "UpdateContactEventHooks",
+      "Transitions": {
+        "NextAction": "",
+        "Errors": [
+          {
+            "NextAction": "",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "AgentId": "arn:aws:connect:eu-west-2:637796036580:instance/311bc0e2-a159-46e3-a12d-19216cb26568/agent/d1705c20-4ff5-402c-9950-beb6ae1cf019"
+      },
+      "Identifier": "set-working-queue-agent",
+      "Type": "UpdateContactTargetQueue",
+      "Transitions": {
+        "NextAction": "",
+        "Errors": [
+          {
+            "NextAction": "",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "QueueId": "arn:aws:connect:eu-west-2:637796036580:instance/311bc0e2-a159-46e3-a12d-19216cb26568/queue/9d1e923f-14a9-405a-84ce-8673151322a0"
+      },
+      "Identifier": "set-working-queue-queue",
+      "Type": "UpdateContactTargetQueue",
+      "Transitions": {
+        "NextAction": "",
+        "Errors": [
+          {
+            "NextAction": "",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "ViewResource": {
+          "Id": "arn:aws:connect:eu-west-2:637796036580:instance/311bc0e2-a159-46e3-a12d-19216cb26568/view/8a5b8478-70de-4155-8deb-40e2ae72b9c4:$LATEST"
+        },
+        "InvocationTimeLimitSeconds": "1",
+        "ViewData": {}
+      },
+      "Identifier": "show-view",
+      "Type": "ShowView",
+      "Transitions": {
+        "NextAction": "",
+        "Errors": [
+          {
+            "NextAction": "",
+            "ErrorType": "NoMatchingCondition"
+          },
+          {
+            "NextAction": "",
+            "ErrorType": "NoMatchingError"
+          },
+          {
+            "NextAction": "",
+            "ErrorType": "TimeLimitExceeded"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {},
+      "Identifier": "return",
+      "Type": "EndFlowModuleExecution",
+      "Transitions": {}
+    }
+  ],
+  "Settings": {
+    "InputParameters": [],
+    "OutputParameters": [],
+    "Transitions": [
+      {
+        "DisplayName": "Success",
+        "ReferenceName": "Success",
+        "Description": ""
+      },
+      {
+        "DisplayName": "Error",
+        "ReferenceName": "Error",
+        "Description": ""
+      }
+    ]
+  }
+}
