@@ -1,0 +1,1059 @@
+{
+  "Version": "2019-10-30",
+  "StartAction": "",
+  "Metadata": {
+    "entryPointPosition": {
+      "x": 50,
+      "y": 50
+    },
+    "ActionMetadata": {
+      "create-task-template": {
+        "position": {
+          "x": 495,
+          "y": 282
+        },
+        "isFriendlyName": true
+      },
+      "create persistent contact association": {
+        "position": {
+          "x": 212,
+          "y": 17
+        },
+        "isFriendlyName": true
+      },
+      "create-task-manual": {
+        "position": {
+          "x": 210,
+          "y": 277
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "ContactFlowId": {
+            "displayName": "Sample queue configurations flow"
+          }
+        },
+        "ContactFlow": {
+          "text": "Sample queue configurations flow"
+        }
+      },
+      "loop prompts": {
+        "position": {
+          "x": 207,
+          "y": 530
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "Messages": [
+            {
+              "PromptId": {
+                "displayName": "Music_Pop_ThrowYourselfInFrontOfIt_Inst.wav"
+              }
+            },
+            {
+              "PromptId": {
+                "displayName": "Music_Pop_Off.wav"
+              }
+            }
+          ]
+        },
+        "audio": [
+          {
+            "id": "${loop_prompts_prompt_id_message1_loop-prompts}",
+            "text": "Music_Pop_ThrowYourselfInFrontOfIt_Inst.wav",
+            "type": "Prompt"
+          },
+          {
+            "id": "${loop_prompts_prompt_id_message4_loop-prompts}",
+            "text": "Music_Pop_Off.wav",
+            "type": "Prompt"
+          }
+        ]
+      },
+      "send-message-email": {
+        "position": {
+          "x": 220,
+          "y": 718
+        },
+        "isFriendlyName": true,
+        "children": [
+          "send-message-email-uxYvIfOwpO",
+          "send-message-email-zaGelDUvnf"
+        ],
+        "parameters": {
+          "WisdomMessageTemplateArn": {
+            "displayName": "my_template"
+          }
+        }
+      },
+      "send-message-email-uxYvIfOwpO": {
+        "position": {
+          "x": 220,
+          "y": 718
+        },
+        "isFriendlyName": true
+      },
+      "send-message-email-zaGelDUvnf": {
+        "position": {
+          "x": 220,
+          "y": 718
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "FromEmailAddress": {
+            "EmailAddress": {
+              "displayName": "Info<${send_message_email_from_email_address_send-message-email-zaGelDUvnf}>"
+            }
+          }
+        }
+      },
+      "send-message-sms": {
+        "position": {
+          "x": 477,
+          "y": 719
+        },
+        "isFriendlyName": true,
+        "children": [
+          "send-message-sms-mqXNlFZpIh"
+        ],
+        "parameters": {
+          "WisdomMessageTemplateArn": {
+            "displayName": "my_sms_template"
+          }
+        }
+      },
+      "send-message-sms-mqXNlFZpIh": {
+        "position": {
+          "x": 477,
+          "y": 719
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "SourceEndpoint": {
+            "Address": {
+              "useDynamic": true
+            }
+          },
+          "ContactFlowArn": {
+            "displayName": "Sample recording behavior"
+          }
+        }
+      },
+      "resume-contact": {
+        "position": {
+          "x": 1371,
+          "y": 298
+        },
+        "isFriendlyName": true
+      },
+      "tag-contact": {
+        "position": {
+          "x": 1374,
+          "y": 27
+        },
+        "isFriendlyName": true
+      },
+      "set-contact-attributes": {
+        "position": {
+          "x": 1373,
+          "y": 523
+        },
+        "isFriendlyName": true,
+        "dynamicParams": []
+      },
+      "set-disconnect-flow": {
+        "position": {
+          "x": 1376,
+          "y": 788
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "EventHooks": {
+            "CustomerRemaining": {
+              "displayName": "Sample disconnect flow"
+            }
+          }
+        },
+        "contactFlow": {
+          "text": "Sample disconnect flow",
+          "id": "${set_disconnect_flow_flow_arn_set-disconnect-flow}"
+        }
+      },
+      "set-voice": {
+        "position": {
+          "x": 1377,
+          "y": 1307
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "TextToSpeechVoice": {
+            "languageCode": "en-US"
+          }
+        },
+        "overrideConsoleVoice": false
+      },
+      "set-event-flow-default-flow-for-agent-UI": {
+        "position": {
+          "x": 1376,
+          "y": 1044
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "EventHooks": {
+            "DefaultAgentUI": {
+              "displayName": "Sample AB test"
+            }
+          }
+        }
+      },
+      "set-event-flow-disconnect-flow-for-agent-ui": {
+        "position": {
+          "x": 1657,
+          "y": 1048
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "EventHooks": {
+            "DisconnectAgentUI": {
+              "displayName": "Sample Lambda integration"
+            }
+          }
+        }
+      },
+      "set-event-flow-flow-at-contact-resume": {
+        "position": {
+          "x": 1931,
+          "y": 1040
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "EventHooks": {
+            "ResumeContact": {
+              "displayName": "Sample inbound flow (first contact experience)"
+            }
+          }
+        }
+      },
+      "set-event-flow-flow-at-contact-pause": {
+        "position": {
+          "x": 2196,
+          "y": 1038
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "EventHooks": {
+            "PauseContact": {
+              "displayName": "Sample recording behavior"
+            }
+          }
+        }
+      },
+      "check-call-progress": {
+        "position": {
+          "x": 2759,
+          "y": 18
+        },
+        "isFriendlyName": true
+      },
+      "check-contact attributes": {
+        "position": {
+          "x": 2761,
+          "y": 481
+        },
+        "isFriendlyName": true,
+        "conditionMetadata": []
+      },
+      "get-queue-metrics queue": {
+        "position": {
+          "x": 2762,
+          "y": 768
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "QueueId": {
+            "displayName": "BasicQueue"
+          }
+        },
+        "queue": {
+          "id": "${get_queue_metrics_queue_arn_get-queue-metrics-queue}",
+          "text": "BasicQueue"
+        }
+      },
+      "get-queue-metrics agent": {
+        "position": {
+          "x": 3042,
+          "y": 773
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "AgentId": {
+            "displayName": "sansari (Sami Ansari)"
+          }
+        },
+        "queue": {
+          "id": "${get_queue_metrics_agent_arn_get-queue-metrics-agent}",
+          "text": "sansari (Sami Ansari)"
+        }
+      },
+      "set-logging-behaviour": {
+        "position": {
+          "x": 3672,
+          "y": 15
+        },
+        "isFriendlyName": true
+      },
+      "loop": {
+        "position": {
+          "x": 4196,
+          "y": 7
+        },
+        "isFriendlyName": true
+      },
+      "aws-lambda-function": {
+        "position": {
+          "x": 4749,
+          "y": 3
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "LambdaFunctionARN": {
+            "displayName": "sample-connect-function"
+          }
+        },
+        "dynamicMetadata": {}
+      },
+      "end-flow-or-resume": {
+        "position": {
+          "x": 5357,
+          "y": -15
+        },
+        "isFriendlyName": true
+      },
+      "cases-create-case": {
+        "position": {
+          "x": 4762,
+          "y": 285
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "CaseTemplateId": {
+            "displayName": "case-template123"
+          },
+          "CaseRequestFields": {
+            "status": {
+              "displayName": "Open"
+            }
+          }
+        },
+        "action": "createCaseAction",
+        "templateName": "case-template123",
+        "requestFieldsOptions": {
+          "status": "Open"
+        },
+        "requiredFieldsOptions": []
+      },
+      "customer-profiles-associate-contact-to-profile": {
+        "position": {
+          "x": 4761,
+          "y": 601
+        },
+        "isFriendlyName": true
+      },
+      "customer-profiles-get-customer-profile": {
+        "position": {
+          "x": 5047,
+          "y": 601
+        },
+        "isFriendlyName": true
+      },
+      "customer-profiles-get-calculated-attributes": {
+        "position": {
+          "x": 5326,
+          "y": 594
+        },
+        "isFriendlyName": true
+      },
+      "customer-profiles-check-segment-membership": {
+        "position": {
+          "x": 5620,
+          "y": 580
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "ProfileRequestData": {
+            "SegmentName": {
+              "displayName": "segment123"
+            }
+          }
+        }
+      }
+    },
+    "Annotations": [],
+    "name": "agent_hold",
+    "description": "",
+    "type": "agentHold",
+    "status": "SAVED",
+    "hash": {}
+  },
+  "Actions": [
+    {
+      "Parameters": {
+        "Name": "",
+        "ContactFlowId": ""
+      },
+      "Identifier": "create-task-template",
+      "Type": "CreateTask",
+      "Transitions": {
+        "NextAction": "",
+        "Errors": [
+          {
+            "NextAction": "",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "RehydrationType": "From Segment"
+      },
+      "Identifier": "create persistent contact association",
+      "Type": "CreatePersistentContactAssociation",
+      "Transitions": {
+        "NextAction": "",
+        "Errors": [
+          {
+            "NextAction": "",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Name": "task123",
+        "ContactFlowId": "${create_task_flow_to_run_task_arn_create-task-manual}",
+        "References": {
+          "key123": {
+            "Value": "${create_task_set_references_key123_value_create-task-manual}",
+            "Type": "STRING"
+          },
+          "key456": {
+            "Value": "${create_task_set_references_key456_value_create-task-manual}",
+            "Type": "EMAIL"
+          }
+        }
+      },
+      "Identifier": "create-task-manual",
+      "Type": "CreateTask",
+      "Transitions": {
+        "NextAction": "",
+        "Errors": [
+          {
+            "NextAction": "",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Messages": [
+          {
+            "PromptId": "${loop_prompts_prompt_id_message1_loop-prompts}"
+          },
+          {
+            "Media": {
+              "Uri": "${loop_prompts_s3_file_path_message2_loop-prompts}",
+              "SourceType": "S3",
+              "MediaType": "Audio"
+            }
+          },
+          {
+            "Text": "Hi from Connect Templater!"
+          },
+          {
+            "PromptId": "${loop_prompts_prompt_id_message4_loop-prompts}"
+          }
+        ],
+        "ContinueMessagingDuringInterrupt": "false"
+      },
+      "Identifier": "loop prompts",
+      "Type": "MessageParticipantIteratively",
+      "Transitions": {}
+    },
+    {
+      "Parameters": {
+        "WisdomMessageTemplateArn": "${send_message_template_arn_send-message-email}",
+        "WisdomKnowledgeBaseArn": "${send_message_knowledge_base_arn_send-message-email}"
+      },
+      "Identifier": "send-message-email",
+      "Type": "RenderMessageTemplate",
+      "Transitions": {
+        "NextAction": "send-message-email-uxYvIfOwpO",
+        "Errors": [
+          {
+            "NextAction": "",
+            "ErrorType": "NoMatchingError"
+          },
+          {
+            "NextAction": "",
+            "ErrorType": "TemplateRenderingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Channel": "EMAIL",
+        "RelatedContact": "CURRENT"
+      },
+      "Identifier": "send-message-email-uxYvIfOwpO",
+      "Type": "CreateContact",
+      "Transitions": {
+        "NextAction": "send-message-email-zaGelDUvnf",
+        "Errors": [
+          {
+            "NextAction": "",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "FromEmailAddress": {
+          "EmailAddress": "${send_message_email_from_email_address_send-message-email-zaGelDUvnf}",
+          "DisplayName": "Info"
+        },
+        "DestinationEmailAddress": {
+          "EmailAddress": "jane@doe.com",
+          "DisplayName": "Jane Doe"
+        },
+        "EmailMessage": {
+          "MessageSourceType": "RAW"
+        }
+      },
+      "Identifier": "send-message-email-zaGelDUvnf",
+      "Type": "StartOutboundEmailContact",
+      "Transitions": {
+        "NextAction": "",
+        "Errors": [
+          {
+            "NextAction": "",
+            "ErrorType": "NoMatchingError"
+          },
+          {
+            "NextAction": "",
+            "ErrorType": "TemplateRenderingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "WisdomMessageTemplateArn": "${send_message_template_arn_send-message-sms}",
+        "WisdomKnowledgeBaseArn": "${send_message_knowledge_base_arn_send-message-sms}"
+      },
+      "Identifier": "send-message-sms",
+      "Type": "RenderMessageTemplate",
+      "Transitions": {
+        "NextAction": "send-message-sms-mqXNlFZpIh",
+        "Errors": [
+          {
+            "NextAction": "",
+            "ErrorType": "NoMatchingError"
+          },
+          {
+            "NextAction": "",
+            "ErrorType": "TemplateRenderingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "SourceEndpoint": {
+          "Address": "",
+          "Type": "CONNECT_PHONENUMBER_ARN"
+        },
+        "DestinationEndpoint": {
+          "Address": "+447123456789",
+          "Type": "TELEPHONE_NUMBER"
+        },
+        "ContactFlowArn": "${send_message_sms_flow_arn_send-message-sms-mqXNlFZpIh}",
+        "ContactSubtype": "connect:SMS",
+        "RelatedContact": "CURRENT"
+      },
+      "Identifier": "send-message-sms-mqXNlFZpIh",
+      "Type": "StartOutboundChatContact",
+      "Transitions": {
+        "NextAction": "",
+        "Errors": [
+          {
+            "NextAction": "",
+            "ErrorType": "NoMatchingError"
+          },
+          {
+            "NextAction": "",
+            "ErrorType": "TemplateRenderingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {},
+      "Identifier": "resume-contact",
+      "Type": "ResumeContact",
+      "Transitions": {
+        "NextAction": "",
+        "Errors": [
+          {
+            "NextAction": "",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Tags": {}
+      },
+      "Identifier": "tag-contact",
+      "Type": "TagContact",
+      "Transitions": {
+        "NextAction": "",
+        "Errors": [
+          {
+            "NextAction": "",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Attributes": {
+          "attribute123": "value123"
+        },
+        "TargetContact": "Current"
+      },
+      "Identifier": "set-contact-attributes",
+      "Type": "UpdateContactAttributes",
+      "Transitions": {
+        "NextAction": "",
+        "Errors": [
+          {
+            "NextAction": "",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "EventHooks": {
+          "CustomerRemaining": "${set_disconnect_flow_flow_arn_set-disconnect-flow}"
+        }
+      },
+      "Identifier": "set-disconnect-flow",
+      "Type": "UpdateContactEventHooks",
+      "Transitions": {
+        "NextAction": "",
+        "Errors": [
+          {
+            "NextAction": "",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "TextToSpeechVoice": "Joanna"
+      },
+      "Identifier": "set-voice",
+      "Type": "UpdateContactTextToSpeechVoice",
+      "Transitions": {
+        "NextAction": "",
+        "Errors": [
+          {
+            "NextAction": "",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "EventHooks": {
+          "DefaultAgentUI": "${set_event_flow_default_flow_for_agent_ui_arn_set-event-flow-default-flow-for-agent-UI}"
+        }
+      },
+      "Identifier": "set-event-flow-default-flow-for-agent-UI",
+      "Type": "UpdateContactEventHooks",
+      "Transitions": {
+        "NextAction": "",
+        "Errors": [
+          {
+            "NextAction": "",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "EventHooks": {
+          "DisconnectAgentUI": "${set_event_flow_disconnect_flow_for_agent_ui_arn_set-event-flow-disconnect-flow-for-agent-ui}"
+        }
+      },
+      "Identifier": "set-event-flow-disconnect-flow-for-agent-ui",
+      "Type": "UpdateContactEventHooks",
+      "Transitions": {
+        "NextAction": "",
+        "Errors": [
+          {
+            "NextAction": "",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "EventHooks": {
+          "ResumeContact": "${set_event_flow_flow_at_contact_resume_arn_set-event-flow-flow-at-contact-resume}"
+        }
+      },
+      "Identifier": "set-event-flow-flow-at-contact-resume",
+      "Type": "UpdateContactEventHooks",
+      "Transitions": {
+        "NextAction": "",
+        "Errors": [
+          {
+            "NextAction": "",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "EventHooks": {
+          "PauseContact": "${set_event_flow_flow_at_contact_pause_arn_set-event-flow-flow-at-contact-pause}"
+        }
+      },
+      "Identifier": "set-event-flow-flow-at-contact-pause",
+      "Type": "UpdateContactEventHooks",
+      "Transitions": {
+        "NextAction": "",
+        "Errors": [
+          {
+            "NextAction": "",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {},
+      "Identifier": "check-call-progress",
+      "Type": "CheckOutboundCallStatus",
+      "Transitions": {
+        "NextAction": "",
+        "Conditions": [
+          {
+            "NextAction": "",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "CallAnswered"
+              ]
+            }
+          },
+          {
+            "NextAction": "",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "VoicemailBeep"
+              ]
+            }
+          },
+          {
+            "NextAction": "",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "VoicemailNoBeep"
+              ]
+            }
+          },
+          {
+            "NextAction": "",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "NotDetected"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "ComparisonValue": "$.Attributes.attribute123"
+      },
+      "Identifier": "check-contact attributes",
+      "Type": "Compare",
+      "Transitions": {
+        "NextAction": "",
+        "Errors": [
+          {
+            "NextAction": "",
+            "ErrorType": "NoMatchingCondition"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "QueueId": "${get_queue_metrics_queue_arn_get-queue-metrics-queue}"
+      },
+      "Identifier": "get-queue-metrics queue",
+      "Type": "GetMetricData",
+      "Transitions": {
+        "NextAction": "",
+        "Errors": [
+          {
+            "NextAction": "",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "AgentId": "${get_queue_metrics_agent_arn_get-queue-metrics-agent}"
+      },
+      "Identifier": "get-queue-metrics agent",
+      "Type": "GetMetricData",
+      "Transitions": {
+        "NextAction": "",
+        "Errors": [
+          {
+            "NextAction": "",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "FlowLoggingBehavior": "Enabled"
+      },
+      "Identifier": "set-logging-behaviour",
+      "Type": "UpdateFlowLoggingBehavior",
+      "Transitions": {
+        "NextAction": ""
+      }
+    },
+    {
+      "Parameters": {
+        "LoopCount": "3"
+      },
+      "Identifier": "loop",
+      "Type": "Loop",
+      "Transitions": {
+        "NextAction": "",
+        "Conditions": [
+          {
+            "NextAction": "",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "ContinueLooping"
+              ]
+            }
+          },
+          {
+            "NextAction": "",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "DoneLooping"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "LambdaFunctionARN": "${aws_lambda_function_function_arn_aws-lambda-function}",
+        "InvocationTimeLimitSeconds": "3",
+        "InvocationType": "SYNCHRONOUS",
+        "ResponseValidation": {
+          "ResponseType": "STRING_MAP"
+        }
+      },
+      "Identifier": "aws-lambda-function",
+      "Type": "InvokeLambdaFunction",
+      "Transitions": {
+        "NextAction": "",
+        "Errors": [
+          {
+            "NextAction": "",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {},
+      "Identifier": "end-flow-or-resume",
+      "Type": "EndFlowExecution",
+      "Transitions": {}
+    },
+    {
+      "Parameters": {
+        "LinkContactToCase": "true",
+        "CaseTemplateId": "${cases_case_template_id_cases-create-case}",
+        "CaseRequestFields": {
+          "customer_id": "customer123",
+          "status": "open",
+          "title": "openedcase123"
+        }
+      },
+      "Identifier": "cases-create-case",
+      "Type": "CreateCase",
+      "Transitions": {
+        "NextAction": "",
+        "Errors": [
+          {
+            "NextAction": "",
+            "ErrorType": "ContactNotLinked"
+          },
+          {
+            "NextAction": "",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "ProfileRequestData": {
+          "ProfileId": "${customer_profiles_associate_contact_to_profile_profile_id_customer-profiles-associate-contact-to-profile}",
+          "ContactId": "${customer_profiles_associate_contact_to_profile_contact_id_customer-profiles-associate-contact-to-profile}"
+        }
+      },
+      "Identifier": "customer-profiles-associate-contact-to-profile",
+      "Type": "AssociateContactToCustomerProfile",
+      "Transitions": {
+        "NextAction": "",
+        "Errors": [
+          {
+            "NextAction": "$end",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "ProfileRequestData": {
+          "UseLatest": "true",
+          "ProfileId": "${customer_profiles_get_customer_profile_object_profile_id_customer-profiles-get-customer-profile}",
+          "ObjectType": "_asset"
+        }
+      },
+      "Identifier": "customer-profiles-get-customer-profile",
+      "Type": "GetCustomerProfileObject",
+      "Transitions": {
+        "NextAction": "",
+        "Errors": [
+          {
+            "NextAction": "",
+            "ErrorType": "NoMatchingError"
+          },
+          {
+            "NextAction": "$end",
+            "ErrorType": "NoneFoundError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "ProfileRequestData": {
+          "ProfileId": "${customer_profiles_get_calculated_attributes_profile_id_customer-profiles-get-calculated-attributes}"
+        },
+        "ProfileResponseData": [
+          "CalculatedAttributes._assets_price_average"
+        ]
+      },
+      "Identifier": "customer-profiles-get-calculated-attributes",
+      "Type": "GetCalculatedAttributesForCustomerProfile",
+      "Transitions": {
+        "NextAction": "",
+        "Errors": [
+          {
+            "NextAction": "",
+            "ErrorType": "NoMatchingError"
+          },
+          {
+            "NextAction": "$end",
+            "ErrorType": "NoneFoundError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "ProfileRequestData": {
+          "ProfileId": "${customer_profiles_check_segment_membership_profile_id_customer-profiles-check-segment-membership}",
+          "SegmentName": "${customer_profiles_check_segment_membership_segment_name_customer-profiles-check-segment-membership}"
+        }
+      },
+      "Identifier": "customer-profiles-check-segment-membership",
+      "Type": "CheckSegmentMembershipForCustomerProfile",
+      "Transitions": {
+        "NextAction": "",
+        "Conditions": [
+          {
+            "NextAction": "",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "True"
+              ]
+            }
+          },
+          {
+            "NextAction": "",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "False"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    }
+  ]
+}

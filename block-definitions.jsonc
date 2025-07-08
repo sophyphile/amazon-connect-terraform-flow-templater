@@ -7,10 +7,7 @@
                 {
                     "name": "cognito_user_pool_id",
                     "metadataRelativePathKey": {
-                        "used": true,
-                        "paths": [
-                            "parameters.CognitoConfiguration.UserPoolArn.displayName"
-                        ]
+                        "used": false
                     },
                     "actionsRelativePathKey": null,
                     "actionsRelativePathValue": "Parameters.CognitoConfiguration.UserPoolArn",
@@ -20,10 +17,7 @@
                 {
                     "name": "cognito_app_client_id",
                     "metadataRelativePathKey": {
-                        "used": true,
-                        "paths": [
-                            "parameters.CognitoConfiguration.AppClientId.displayName"
-                        ]
+                        "used": false
                     },
                     "actionsRelativePathKey": null,
                     "actionsRelativePathValue": "Parameters.CognitoConfiguration.AppClientId",
@@ -78,7 +72,7 @@
                     "description": "The ARN of the flow to run the task"
                 },
                 {
-                    "name": "set_references_${reference_key}_value",
+                    "name": "set_references_${actionsRelativePathKey}_value",
                     "metadataRelativePathKey": {
                         "used": false
                     },
@@ -94,6 +88,42 @@
         {
             "status": "complete",
             "exportedJsonBlockName": "GetParticipantInput", 
+            "vars": [
+                {
+                    "name": "prompt_id",
+                    "metadataRelativePathKey": {
+                        "used": false
+                    },
+                    "actionsRelativePathKey": null,
+                    "actionsRelativePathValue": "Parameters.PromptId",
+                    "type": "Arn",
+                    "description": "The ARN of the prompt to play to get customer input"
+                },
+                {
+                    "name": "s3_file_path",
+                    "metadataRelativePathKey": {
+                        "used": false
+                    },
+                    "actionsRelativePathKey": null,
+                    "actionsRelativePathValue": "Parameters.Media.Uri",
+                    "type": "String",
+                    "description": "The S3 file path of the prompt to play to get customer input"
+                },
+                {
+                    "name": "lex_bot_alias_arn",
+                    "metadataRelativePathKey": {
+                        "used": false
+                    },
+                    "actionsRelativePathKey": null,
+                    "actionsRelativePathValue": "Parameters.LexV2Bot.AliasArn",
+                    "type": "String",
+                    "description": "The ARN of the Lex V2 bot alias to use to get customer input"
+                }
+            ]
+        },
+        {
+            "status": "complete",
+            "exportedJsonBlockName": "ConnectParticipantWithLexBot", 
             "vars": [
                 {
                     "name": "prompt_id",
@@ -239,7 +269,7 @@
             ]
         },
         {
-            "status": "draft", // TODO: Pending sms_from_number (metadata) + source endpoint path changes when manually selected.
+            "status": "complete", // TODO: Pending sms_from_number (metadata) + source endpoint path changes when manually selected.
             "exportedJsonBlockName": "StartOutboundChatContact", 
             "vars": [
                 {
