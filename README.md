@@ -58,16 +58,16 @@ python flow_variableizer.py --folder "path/to/flow/directory"
 
 ```bash
 # Process a specific flow file
-python flow_variableizer.py --file "sample flows/custom_ow.json"
+python flow_variableizer.py --file "sample_input_flows/agent_hold.json"
 
 # Process all JSON files in the sample flows directory
-python flow_variableizer.py --folder "sample flows"
+python flow_variableizer.py --folder "sample_input_flows"
 ```
 
 ## Output
 
-- Variableized flow files are saved to the `outputted_flows` directory
-- Output files are named with `_variableized` suffix (e.g., `custom_ow_variableized.json`)
+- Variableized flow templates are saved to the `flow_templates` directory
+- Output files are named with the Terraform `tftpl` suffix (e.g., `agent_hold.tftpl`)
 - Original flow files are not modified
 
 ## Block Definitions File
@@ -118,17 +118,23 @@ For array elements, human-friendly suffixes are added:
 
 ## File Structure
 
-```
+```md
 flow-templater/
 ├── flow_variableizer.py          # Main script
 ├── block-definitions.jsonc       # Block definitions
-├── sample flows/                 # Example flow files
+├── blocks-per-flow.jsonc         # Blocks available in each flow type
+├── sample_input_flows/           # Example flow files
+│   ├── agent_hold.json
 │   ├── outbound_whisper.json
 │   ├── customer_queue.json
 │   └── ...
-├── outputted_flows/              # Generated variableized flows
-│   ├── outbound_whisper_variableized.json
-│   ├── customer_queue_variableized.json
+├── flow_templates/               # Generated variableized Terraform template files
+│   ├── outbound_whisper.tftpl
+│   ├── customer_queue.tftpl
+│   └── ...
+├── sample_outputted_flows        # JSON flow files rendered by Terraform using the variableized template
+│   ├── outbound_whisper_rendered.json
+│   ├── customer_queue_rendered.json
 │   └── ...
 └── README.md                     # This file
 ```
@@ -142,7 +148,7 @@ flow-templater/
    - Apply variable definitions to each action type
    - Handle dynamic keys and array indices
    - Update both action parameters and metadata
-3. **Generate Output**: Save variableized flows to `outputted_flows` directory
+3. **Generate Output**: Save variableized flows to `flow_templates` directory
 
 ## Error Handling
 

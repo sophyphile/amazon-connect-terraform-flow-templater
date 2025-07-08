@@ -682,7 +682,7 @@ def process_flow_file(flow_file_path: str, reverse_map: Dict[str, List[Dict[str,
     Args:
         flow_file_path: Path to the flow file
         reverse_map: The reverse map of block definitions
-        output_dir: Directory to save the variableized flow
+        output_dir: Directory to save the variableized flow as .tftpl
     """
     try:
         # Load the flow file
@@ -692,11 +692,11 @@ def process_flow_file(flow_file_path: str, reverse_map: Dict[str, List[Dict[str,
         # Variableize the flow
         variableized_flow = variableize_flow(flow_data, reverse_map)
         
-        # Create output filename in the output directory
+        # Create output filename in the output directory with .tftpl extension
         flow_path = Path(flow_file_path)
-        output_path = output_dir / f"{flow_path.stem}_variableized{flow_path.suffix}"
+        output_path = output_dir / f"{flow_path.stem}.tftpl"
         
-        # Write the variableized flow
+        # Write the variableized flow as a Terraform template
         with open(output_path, "w", encoding="utf-8") as f:
             json.dump(variableized_flow, f, indent=2)
         
@@ -725,7 +725,7 @@ Examples:
     args = parser.parse_args()
     
     # Create output directory
-    output_dir = Path("outputted_flows")
+    output_dir = Path("flow_templates")
     output_dir.mkdir(parents=True, exist_ok=True)
     print(f"Output directory: {output_dir}")
     
