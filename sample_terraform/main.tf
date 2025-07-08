@@ -80,6 +80,14 @@ resource "local_file" "rendered_flow" {
   filename = "${path.module}/../sample_outputted_flows/agent_hold_rendered.json"
 }
 
+# Sample flow creation
+resource "awscc_connect_contact_flow" "example" {
+  instance_arn  = "arn:aws:connect:eu-west-2:123456789012:instance/test-instance"
+  name          = "Agent Hold"
+  content       = data.template_file.connect_flow.rendered
+  type          = "AGENT_HOLD"
+}
+
 output "rendered_flow_json" {
   value = data.template_file.connect_flow.rendered
 } 
