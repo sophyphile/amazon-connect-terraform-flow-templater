@@ -1,11 +1,6 @@
 
 # Flow Templater
 
-Vars remove spaces and replace with '-'
-Loop prompts - audio[*].id
-Test with all possible flows and all possible vars
-Test with Terraform
-
 A Python tool to variableize AWS Connect flow files for Terraform templating. This tool processes JSON flow files and converts specific values into Terraform variables, making it easier to manage AWS Connect flows as infrastructure code.
 
 ## Overview
@@ -168,7 +163,7 @@ flow-templater/
 
 ## License
 
-This project is open source. Feel free to use and modify as needed.
+This project is licensed under the [MIT License](./LICENSE).
 
 ## Outstanding Issues
 
